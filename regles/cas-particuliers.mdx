@@ -1,0 +1,71 @@
+---
+title: "Annulations, no-shows et séjours propriétaire Firby"
+sidebarTitle: "Cas particuliers"
+description: "Séjours propriétaire, annulations, no-shows et régime TVA : configurez chaque cas particulier dans Firby pour une facturation mensuelle sans erreur."
+---
+
+Chaque mois, une poignée de séjours sort du cadre standard : le propriétaire a occupé son propre bien, un voyageur a annulé sa réservation, un autre ne s'est pas présenté. Ces situations demandent une décision explicite — facturer, ne pas facturer, ou conserver uniquement certains frais. Firby vous laisse définir une règle pour chacun de ces cas, appliquée automatiquement à chaque génération sans que vous ayez à les traiter manuellement.
+
+## Cas gérés par Firby
+
+<Accordion title="Séjours propriétaire">
+  Lorsqu'un propriétaire occupe lui-même son logement, la réservation remonte dans votre PMS comme n'importe quel autre séjour. Sans règle explicite, Firby l'inclurait dans les calculs — ce qui n'est généralement pas votre intention.
+
+  Vous disposez de trois options :
+
+  | Option | Comportement | Cas d'usage |
+  |---|---|---|
+  | **Ignorer** | La réservation propriétaire est exclue du calcul et n'apparaît pas sur la facture. | Vous ne facturez aucune prestation lors des occupations personnelles. |
+  | **Facturer à zéro** | La ligne apparaît sur la facture avec un montant de 0,00 €. | Vous souhaitez que le propriétaire voie la période d'occupation, sans rien facturer. |
+  | **Conserver les frais uniquement** | La commission est annulée, mais les forfaits réels (ménage, linge) restent facturés. | Vous avez tout de même réalisé des prestations (remise en état, linge lavé) et souhaitez les refacturer. |
+
+  Pour configurer cette règle, allez dans **Paramètres → Règles de facturation → Cas particuliers → Séjours propriétaire**.
+</Accordion>
+
+<Accordion title="Annulations">
+  Quand un voyageur annule, la réservation peut rester visible dans votre PMS avec un statut *Annulé*. Firby détecte ce statut et applique la règle que vous avez définie.
+
+  | Option | Comportement | Cas d'usage |
+  |---|---|---|
+  | **Ignorer** | La réservation annulée est exclue de la facture comme si elle n'existait pas. | La plateforme ne vous verse rien sur cette réservation. |
+  | **Conserver les frais retenus** | Firby facture les frais d'annulation effectivement encaissés (remontés depuis le PMS). | La politique d'annulation vous a permis de retenir une partie du loyer. |
+  | **Facturer des frais d'annulation** | Une ligne fixe définie par vos soins (ex. : frais de gestion 50 €) est ajoutée à la facture du propriétaire. | Vous souhaitez compenser votre mobilisation sur une réservation qui ne s'est pas concrétisée. |
+
+  Pour configurer le montant des frais d'annulation forfaitaires, rendez-vous dans **Paramètres → Règles de facturation → Cas particuliers → Annulations**, puis saisissez le montant dans le champ **Frais d'annulation**.
+</Accordion>
+
+<Accordion title="No-shows">
+  Un no-show survient lorsque le voyageur ne se présente pas sans avoir annulé formellement. Le séjour reste dans votre PMS avec le statut correspondant.
+
+  | Option | Comportement |
+  |---|---|
+  | **Traiter comme une annulation** | Firby applique votre règle d'annulation telle que configurée (ignorer, frais retenus ou forfait). |
+  | **Facturer normalement** | Le séjour est traité comme un séjour classique — la commission et les forfaits sont calculés comme si le voyageur était présent. Utile si le loyer a été encaissé en totalité. |
+
+  Configurez ce comportement dans **Paramètres → Règles de facturation → Cas particuliers → No-shows**.
+</Accordion>
+
+## TVA : franchise ou régime normal
+
+Firby prend en charge les deux régimes de TVA applicables aux conciergeries françaises.
+
+<Tabs>
+  <Tab title="Franchise en base">
+    Votre conciergerie bénéficie de la franchise en base de TVA (article 293 B du CGI) : vous ne collectez pas de TVA et vos factures portent la mention légale *« TVA non applicable — article 293 B du CGI »*. 
+
+    Activez ce mode dans **Paramètres → Facturation → Régime TVA → Franchise en base**. Firby retire automatiquement la TVA de toutes les lignes et ajoute la mention réglementaire sur chaque facture.
+  </Tab>
+  <Tab title="Régime normal">
+    Vous êtes soumis au régime normal de TVA et devez collecter la taxe sur vos prestations. Firby calcule la TVA ligne par ligne selon les taux que vous configurez (20 %, 10 % ou autre). 
+
+    Le taux par défaut est configurable dans **Paramètres → Facturation → Régime TVA → Régime normal → Taux par défaut**. Vous pouvez ensuite affiner le taux sur chaque type de forfait si plusieurs taux coexistent dans votre facturation.
+  </Tab>
+</Tabs>
+
+<Warning>
+  Toute modification d'une règle de cas particulier — ou d'un régime TVA — s'applique uniquement aux générations mensuelles suivantes. Les brouillons déjà produits ne sont pas modifiés rétroactivement. Si vous devez corriger un brouillon existant, éditez-le manuellement avant de le pousser vers votre outil de facturation.
+</Warning>
+
+<Tip>
+  Si vous rencontrez une situation vraiment atypique qui ne rentre dans aucun des cas ci-dessus — une régularisation sur plusieurs mois, un geste commercial, une refacturation de travaux — utilisez une **ligne personnalisée** (voir [Forfaits → Ligne personnalisée](/regles/forfaits)). Vous ajoutez la ligne directement sur le brouillon concerné, avec le libellé et le montant de votre choix, sans créer de règle récurrente.
+</Tip>

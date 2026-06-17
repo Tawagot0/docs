@@ -1,0 +1,56 @@
+---
+title: "Relire, corriger et valider vos brouillons de factures"
+sidebarTitle: "Relecture"
+description: "Vérifiez chaque ligne — règle, réservations source, montants HT, TVA et TTC — puis cliquez sur Pousser pour transmettre vers votre outil comptable."
+---
+
+La relecture est la seule étape que vous effectuez chaque mois. Firby a déjà synchronisé vos réservations, appliqué vos règles et composé les brouillons : votre rôle est de vérifier que tout est correct, d'ajuster si nécessaire, puis de déclencher l'envoi vers votre outil comptable. L'ensemble de la clôture se résume à relire et valider.
+
+## Consulter vos brouillons
+
+<Steps>
+  <Step title="Ouvrir la liste des brouillons">
+    Depuis le tableau de bord Firby, cliquez sur **Brouillons** dans le menu de navigation. Vous voyez la liste de tous les brouillons générés pour le mois en cours, un par propriétaire. Les brouillons signalés apparaissent en tête de liste avec un indicateur d'attention.
+  </Step>
+  <Step title="Ouvrir le détail d'un brouillon">
+    Cliquez sur un brouillon pour afficher sa vue complète : coordonnées du propriétaire, logement concerné, période de facturation, et l'ensemble des lignes de facturation avec leur montant HT, la TVA appliquée et le montant TTC. Cliquez sur n'importe quelle ligne pour voir la règle appliquée et les réservations source qui la justifient.
+  </Step>
+  <Step title="Vérifier chaque ligne">
+    Parcourez les lignes et contrôlez que les montants correspondent à ce que vous attendez. Vérifiez notamment les commissions, les forfaits et les éventuelles surcharges propres au logement. Si une ligne vous semble incorrecte, consultez son détail avant de corriger.
+  </Step>
+</Steps>
+
+## Corriger un brouillon
+
+Avant de pousser, vous pouvez modifier le contenu d'un brouillon directement dans Firby :
+
+- **Modifier le montant d'une ligne** — saisissez le montant corrigé directement sur la ligne concernée. La TVA et le total TTC se recalculent automatiquement.
+- **Ajouter une ligne** — cliquez sur **Ajouter une ligne**, sélectionnez ou saisissez le libellé, le montant HT et le taux de TVA applicable.
+- **Supprimer une ligne** — cliquez sur l'icône de suppression en regard de la ligne à retirer. La ligne est effacée du brouillon sans impacter vos règles pour les mois suivants.
+
+<Tip>
+  Si une ligne vous semble incorrecte, profitez-en pour vérifier la règle correspondante dans **Paramètres > Règles**. Une correction faite dans les règles s'appliquera automatiquement à tous les brouillons des mois suivants — vous n'aurez pas à corriger manuellement chaque fois.
+</Tip>
+
+## Pousser vers votre outil comptable
+
+Lorsque le brouillon vous convient, cliquez sur **Pousser**. Firby transmet le brouillon à votre outil comptable connecté — Pennylane, Qonto, Abby ou Henrri — sous forme de facture brouillon. Le brouillon change de statut dans Firby et le numéro de facture définitif est attribué par votre outil comptable.
+
+<CardGroup cols={2}>
+  <Card title="Pennylane" icon="p">
+    La facture apparaît dans vos brouillons Pennylane, prête à être finalisée et envoyée au propriétaire.
+  </Card>
+  <Card title="Qonto" icon="q">
+    Le brouillon est créé dans Qonto et suit le circuit de validation de votre compte.
+  </Card>
+  <Card title="Abby" icon="a">
+    La facture brouillon est accessible dans Abby pour relecture et envoi final.
+  </Card>
+  <Card title="Henrri" icon="h">
+    Le brouillon est enregistré dans Henrri et intégré à votre tableau de bord de facturation.
+  </Card>
+</CardGroup>
+
+<Warning>
+  Une fois le brouillon poussé vers votre outil comptable, toute modification doit être effectuée directement dans cet outil — Pennylane, Qonto, Abby ou Henrri selon votre configuration. Firby ne peut plus modifier un brouillon déjà transmis ; il se contentera de remonter le statut de paiement réel (à payer, payée, en retard) depuis votre outil.
+</Warning>

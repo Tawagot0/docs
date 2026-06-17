@@ -1,0 +1,43 @@
+---
+title: "Firby et Abby : poussez vos brouillons de factures"
+sidebarTitle: "Abby"
+description: "Reliez Firby à Abby via vos identifiants API pour transférer vos brouillons de factures propriétaires et récupérer les statuts de paiement sans ressaisie."
+---
+
+L'intégration Abby vous permet de pousser les brouillons de factures générés par Firby vers votre compte Abby, avec toutes les lignes détaillées — commission, ménage, linge, check-in, surcharges par logement. Abby prend ensuite le relais pour la finalisation et l'envoi, et les statuts de paiement remontent automatiquement dans Firby.
+
+## Ce que fait l'intégration
+
+Firby crée dans Abby un brouillon de facture pour chaque propriétaire, reprenant l'ensemble des lignes calculées à partir de vos règles et de vos réservations du mois. Une fois les factures traitées côté Abby, les statuts — **à payer**, **payée**, **en retard** ou **partiellement payée** — sont synchronisés dans Firby sans intervention manuelle.
+
+## Connecter Abby à Firby
+
+La connexion se configure une seule fois depuis les paramètres de Firby.
+
+<Steps>
+  <Step title="Ouvrir les intégrations">
+    Dans Firby, accédez à **Paramètres > Intégrations** puis sélectionnez **Abby**.
+  </Step>
+  <Step title="Renseigner vos identifiants API Abby">
+    Saisissez vos identifiants API dans les champs prévus. Vous les trouverez dans votre espace Abby, sous **Mon compte > API**. Copiez et collez la clé dans Firby.
+  </Step>
+  <Step title="Confirmer la connexion">
+    Firby valide vos identifiants et confirme la connexion. Le nom de votre compte Abby s'affiche — la configuration est terminée.
+  </Step>
+</Steps>
+
+## Pousser un brouillon vers Abby
+
+Depuis l'écran de relecture des brouillons, sélectionnez la facture souhaitée et cliquez sur **Pousser vers Abby**. Le brouillon est immédiatement créé dans Abby avec l'intégralité des lignes de facturation. Finalisez et envoyez la facture depuis votre espace Abby.
+
+<Note>
+  Firby pousse uniquement des **brouillons**. La numérotation définitive des factures, leur envoi aux propriétaires et la conformité réglementaire restent entièrement gérés par Abby.
+</Note>
+
+## Suivi du statut de paiement
+
+Les statuts de paiement enregistrés dans Abby — **à payer**, **payée**, **en retard** ou **partiellement payée** — se reflètent automatiquement dans Firby. Vous disposez ainsi d'une vue consolidée sur l'état de recouvrement de l'ensemble de vos propriétaires, sans avoir à jongler entre les deux outils.
+
+<Tip>
+  Si vous gérez plusieurs organisations dans Abby, assurez-vous de connecter le bon espace de travail dans Firby. En cas de doute, vérifiez le nom du compte affiché après la connexion dans **Paramètres > Intégrations** et reconnectez-vous si nécessaire.
+</Tip>

@@ -1,0 +1,122 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "almond",
+  "name": "Firby",
+  "description": "Documentation Firby — facturation automatique pour conciergeries de location courte durée.",
+  "colors": {
+    "primary": "#cc0505",
+    "light": "#e07c7c",
+    "dark": "#cc0505"
+  },
+  "favicon": "https://media.brand.dev/27f1e31f-9f26-42c5-9245-973f01a6b275.png",
+  "icons": {
+    "library": "lucide"
+  },
+  "metadata": {
+    "timestamp": true
+  },
+  "contextual": {
+    "options": ["copy", "view", "assistant"]
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Guide",
+        "groups": [
+          {
+            "group": "Démarrer",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "connexion-pms"
+            ]
+          },
+          {
+            "group": "Règles de facturation",
+            "pages": [
+              "regles/commissions",
+              "regles/forfaits",
+              "regles/surcharges",
+              "regles/cas-particuliers"
+            ]
+          },
+          {
+            "group": "Brouillons & validation",
+            "pages": [
+              "brouillons/generation",
+              "brouillons/relecture",
+              "brouillons/tracabilite"
+            ]
+          },
+          {
+            "group": "Intégrations compta",
+            "pages": [
+              "integrations/pennylane",
+              "integrations/qonto",
+              "integrations/abby",
+              "integrations/henrri"
+            ]
+          },
+          {
+            "group": "Portail propriétaires",
+            "pages": [
+              "portail/invitation",
+              "portail/suivi-paiements"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Aide",
+        "groups": [
+          {
+            "group": "Compte & abonnement",
+            "pages": [
+              "aide/compte",
+              "aide/abonnement",
+              "aide/securite"
+            ]
+          },
+          {
+            "group": "FAQ",
+            "pages": [
+              "aide/faq",
+              "aide/migration-tableur"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Site Firby",
+        "href": "https://firby.fr"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Essai gratuit",
+      "href": "https://app.firby.fr/signup"
+    }
+  },
+  "footer": {
+    "links": [
+      {
+        "header": "Firby",
+        "items": [
+          { "label": "Site officiel", "href": "https://firby.fr" },
+          { "label": "CGV", "href": "https://firby.fr/cgv" },
+          { "label": "Mentions légales", "href": "https://firby.fr/mentions-legales" }
+        ]
+      },
+      {
+        "header": "Support",
+        "items": [
+          { "label": "Nous contacter", "href": "mailto:contact@firby.fr" }
+        ]
+      }
+    ]
+  }
+}

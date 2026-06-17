@@ -1,0 +1,100 @@
+---
+title: "Paramétrer les commissions conciergerie dans Firby"
+sidebarTitle: "Commissions"
+description: "Paramétrez le taux, la base et le régime TVA de vos commissions — cinq bases disponibles, HT ou TTC, rattachement au mois d'arrivée ou au départ."
+---
+
+Les commissions constituent la ligne principale de chaque facture propriétaire. Vous les configurez une seule fois dans Firby — taux, base de calcul, régime TVA et mois de rattachement — et elles s'appliquent automatiquement à chaque génération mensuelle, sans ressaisie.
+
+## Bases de calcul disponibles
+
+Firby propose cinq bases sur lesquelles votre taux de commission est appliqué. Choisissez celle qui correspond à votre convention tarifaire avec vos propriétaires.
+
+| Base | Description |
+|---|---|
+| **Total brut** | Montant total facturé au voyageur, toutes plateformes confondues. |
+| **Net** | Montant encaissé après déduction des frais de plateforme (Airbnb, Booking, etc.). |
+| **Net hors ménage** | Montant net duquel les frais de ménage sont soustraits avant calcul. |
+| **Hébergement seul** | Part hébergement uniquement — les extras (ménage, linge, check-in tardif) sont exclus. |
+| **Commission PMS** | Utilise directement le montant de commission déjà calculé par votre PMS, sans recalcul côté Firby. |
+
+<Note>
+  Ces règles s'appliquent par défaut à l'ensemble de vos logements. Vous pouvez les surcharger propriété par propriété depuis les paramètres de chaque logement. Consultez la page [Surcharges par logement](/regles/surcharges) pour en savoir plus.
+</Note>
+
+## Mode HT ou TTC
+
+Firby calcule votre commission soit hors taxe (HT), soit toutes taxes comprises (TTC) selon votre paramétrage.
+
+<Tabs>
+  <Tab title="Hors taxe (HT)">
+    La commission est calculée sur la base hors TVA. La TVA est ensuite ajoutée en pied de facture selon le taux configuré sur la ligne. C'est le mode le plus courant pour les conciergeries soumises au régime normal de TVA.
+  </Tab>
+  <Tab title="Toutes taxes comprises (TTC)">
+    La commission est calculée en incluant la TVA dans l'assiette. Ce mode convient lorsque votre accord propriétaire est exprimé TTC. Firby recalcule la part HT et la TVA correspondante pour l'affichage facturation.
+  </Tab>
+</Tabs>
+
+Le taux de TVA est configurable indépendamment sur chaque ligne de facturation. Vous pouvez ainsi appliquer 20 % sur la commission et 10 % sur le ménage si votre situation fiscale l'exige.
+
+## Mois de rattachement
+
+Lors de la génération des brouillons, Firby détermine à quel mois rattacher chaque séjour selon la règle que vous avez choisie.
+
+<CardGroup cols={2}>
+  <Card title="À l'arrivée" icon="arrow-right-to-bracket">
+    Le séjour est facturé dans le mois où le voyageur arrive. Un séjour du 30 mars au 3 avril apparaît sur la facture de mars.
+  </Card>
+  <Card title="Au départ" icon="arrow-right-from-bracket">
+    Le séjour est facturé dans le mois où le voyageur repart. Ce même séjour du 30 mars au 3 avril apparaît sur la facture d'avril.
+  </Card>
+</CardGroup>
+
+<Tip>
+  Le rattachement au départ est souvent préféré car il garantit que le séjour est effectivement terminé — et donc que le loyer est bien encaissé — avant d'apparaître sur la facture.
+</Tip>
+
+## Exemple de calcul
+
+L'exemple ci-dessous reprend la configuration de la Villa Les Embruns (Mme Lefèvre) pour le mois de mars 2026 : un taux de 20 % HT appliqué sur la base **Net** (loyers encaissés).
+
+```text
+Base de calcul  : Net (loyers encaissés)
+Taux            : 20 % HT
+
+Réservation #1  :   980,00 €
+Réservation #2  : + 580,00 €
+Réservation #3  : + 1 140,00 €
+Réservation #4  : + 820,00 €
+Réservation #5  : + 460,00 €
+Réservation #6  : + 340,00 €
+                 ──────────
+Total net       :  4 320,00 €
+
+Commission      :  4 320,00 € × 20 % = 864,00 € HT
+TVA 20 %        :                    + 172,80 €
+                                     ──────────
+Commission TTC  :                    1 036,80 €
+```
+
+Chaque ligne de la facture brouillon est reliée aux réservations source qui la composent — vous pouvez vérifier le détail en un clic depuis l'interface Firby.
+
+## Configurer votre commission
+
+<Steps>
+  <Step title="Ouvrez vos règles de facturation">
+    Dans Firby, rendez-vous dans **Paramètres → Règles de facturation → Commissions**.
+  </Step>
+  <Step title="Choisissez la base de calcul">
+    Sélectionnez l'une des cinq bases dans le menu déroulant. Firby affiche une simulation en temps réel basée sur vos réservations du mois précédent.
+  </Step>
+  <Step title="Saisissez votre taux">
+    Entrez votre taux en pourcentage (ex. : `20`). Précisez si le calcul s'effectue HT ou TTC, puis choisissez le taux de TVA applicable.
+  </Step>
+  <Step title="Choisissez le mois de rattachement">
+    Sélectionnez **À l'arrivée** ou **Au départ** selon votre convention.
+  </Step>
+  <Step title="Enregistrez">
+    Cliquez sur **Enregistrer la règle**. La nouvelle configuration sera prise en compte dès la prochaine génération mensuelle.
+  </Step>
+</Steps>

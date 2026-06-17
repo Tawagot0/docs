@@ -1,0 +1,149 @@
+---
+title: "Connecter votre PMS à Firby : guide pour six logiciels"
+sidebarTitle: "Connexion PMS"
+description: "Guide de connexion pour les six PMS pris en charge : Superhote, Guesty, Lodgify, Smoobu, Smily et Hostaway. Vos identifiants sont chiffrés en AES-256-GCM."
+---
+
+Connecter votre PMS à Firby permet d'importer automatiquement vos logements et vos réservations, sans aucune exportation manuelle. Une fois la connexion établie, Firby synchronise régulièrement vos données pour que chaque brouillon du 1er du mois reflète l'état réel de votre activité. Vos identifiants de connexion sont stockés de façon sécurisée et ne transitent jamais en clair.
+
+<Warning>
+  **Sécurité de vos identifiants.** Firby chiffre tous vos identifiants PMS en **AES-256-GCM** dès leur saisie. Ils ne sont jamais stockés en clair, jamais renvoyés vers votre navigateur et ne sont pas accessibles par l'équipe Firby. En cas de doute, vous pouvez révoquer et renouveler votre clé API côté PMS à tout moment, puis la mettre à jour dans Firby.
+</Warning>
+
+## Connexion selon votre PMS
+
+<Tabs>
+  <Tab title="Superhote">
+    Superhote expose une clé API depuis les paramètres de votre compte. Suivez ces étapes pour la récupérer et la saisir dans Firby.
+
+    <Steps>
+      <Step title="Accéder aux paramètres API Superhote">
+        Connectez-vous à votre compte Superhote, puis ouvrez **Paramètres > Intégrations > API**. Si cette section n'est pas visible, vérifiez que votre rôle dispose des droits d'administration.
+      </Step>
+      <Step title="Générer ou copier votre clé API">
+        Cliquez sur **Générer une clé** si aucune clé n'existe encore, ou copiez la clé existante. Conservez-la dans votre presse-papier.
+      </Step>
+      <Step title="Saisir la clé dans Firby">
+        Dans Firby, ouvrez **Paramètres > PMS**, sélectionnez **Superhote**, collez votre clé API dans le champ dédié, puis cliquez sur **Connecter**.
+      </Step>
+      <Step title="Vérifier l'import">
+        Firby confirme la connexion et lance l'import. Vos logements et réservations apparaissent dans **Logements** en quelques minutes.
+      </Step>
+    </Steps>
+  </Tab>
+
+  <Tab title="Guesty">
+    Guesty utilise un système d'intégration OAuth ou de clé API selon la version de votre compte. La procédure ci-dessous concerne la clé API.
+
+    <Steps>
+      <Step title="Ouvrir la section Intégrations de Guesty">
+        Connectez-vous à Guesty, puis rendez-vous dans **Paramètres > Intégrations & API > Clés API**. Ce menu est accessible aux utilisateurs avec le rôle Admin.
+      </Step>
+      <Step title="Créer une nouvelle clé API">
+        Cliquez sur **Créer une clé API**, donnez-lui un nom reconnaissable (par exemple « Firby ») et sélectionnez les permissions en lecture sur les réservations et les logements. Copiez la clé générée.
+      </Step>
+      <Step title="Saisir la clé dans Firby">
+        Dans Firby, ouvrez **Paramètres > PMS**, sélectionnez **Guesty**, collez votre clé API, puis cliquez sur **Connecter**.
+      </Step>
+      <Step title="Vérifier l'import">
+        Une fois la connexion validée, Firby importe automatiquement vos propriétés et réservations. Patientez quelques minutes, puis vérifiez la liste dans **Logements**.
+      </Step>
+    </Steps>
+  </Tab>
+
+  <Tab title="Lodgify">
+    Lodgify met à disposition une clé API accessible depuis le tableau de bord de votre compte.
+
+    <Steps>
+      <Step title="Accéder aux paramètres API Lodgify">
+        Connectez-vous à Lodgify, puis naviguez vers **Paramètres du compte > API**. La clé API est visible et copiable depuis cette page.
+      </Step>
+      <Step title="Copier votre clé API">
+        Copiez la clé affichée. Si elle n'existe pas encore, cliquez sur **Générer** pour en créer une.
+      </Step>
+      <Step title="Saisir la clé dans Firby">
+        Dans Firby, ouvrez **Paramètres > PMS**, sélectionnez **Lodgify**, collez votre clé API dans le champ prévu, puis cliquez sur **Connecter**.
+      </Step>
+      <Step title="Vérifier l'import">
+        Firby confirme la connexion et importe vos logements et réservations. Vérifiez que tous vos hébergements sont bien présents dans **Logements** avant de configurer vos règles.
+      </Step>
+    </Steps>
+  </Tab>
+
+  <Tab title="Smoobu">
+    Smoobu propose une clé API dans les paramètres de votre profil. Elle suffit à connecter Firby.
+
+    <Steps>
+      <Step title="Ouvrir les paramètres Smoobu">
+        Connectez-vous à Smoobu, puis allez dans **Paramètres > Profil & Compte > Accès API**. Votre clé API est affichée dans cette section.
+      </Step>
+      <Step title="Copier la clé API">
+        Copiez la clé affichée. Elle identifie votre compte Smoobu de façon unique auprès de Firby.
+      </Step>
+      <Step title="Saisir la clé dans Firby">
+        Dans Firby, ouvrez **Paramètres > PMS**, sélectionnez **Smoobu**, collez la clé, puis cliquez sur **Connecter**.
+      </Step>
+      <Step title="Vérifier l'import">
+        Après validation, Firby importe vos logements et réservations. L'opération prend généralement moins de cinq minutes.
+      </Step>
+    </Steps>
+  </Tab>
+
+  <Tab title="Smily">
+    Smily (anciennement BookingSync) utilise un système d'application OAuth pour accorder l'accès à des outils tiers comme Firby.
+
+    <Steps>
+      <Step title="Accéder aux applications connectées">
+        Connectez-vous à Smily, puis rendez-vous dans **Paramètres > Intégrations > Applications connectées** ou **API & Développeurs** selon votre version d'interface.
+      </Step>
+      <Step title="Autoriser Firby ou récupérer votre jeton">
+        Suivez la procédure d'autorisation OAuth proposée par Firby : vous êtes redirigé vers Smily pour accorder les permissions de lecture sur vos réservations et logements. Validez l'accès.
+      </Step>
+      <Step title="Finaliser dans Firby">
+        De retour dans Firby, la connexion est confirmée automatiquement. Ouvrez **Paramètres > PMS** pour vérifier que Smily apparaît bien comme connecté.
+      </Step>
+      <Step title="Vérifier l'import">
+        Vos logements et réservations s'importent en quelques minutes. Consultez **Logements** pour confirmer que la liste est complète.
+      </Step>
+    </Steps>
+  </Tab>
+
+  <Tab title="Hostaway">
+    Hostaway fournit des identifiants API (Account ID et clé secrète) depuis les paramètres de votre portail.
+
+    <Steps>
+      <Step title="Accéder aux paramètres API Hostaway">
+        Connectez-vous à votre portail Hostaway, puis naviguez vers **Paramètres > API & Intégrations**. Vous y trouvez votre **Account ID** et votre **API Secret**.
+      </Step>
+      <Step title="Copier les identifiants">
+        Copiez votre **Account ID** et votre **API Secret**. Ces deux informations sont nécessaires pour établir la connexion depuis Firby.
+      </Step>
+      <Step title="Saisir les identifiants dans Firby">
+        Dans Firby, ouvrez **Paramètres > PMS**, sélectionnez **Hostaway**, renseignez l'Account ID et l'API Secret dans les champs correspondants, puis cliquez sur **Connecter**.
+      </Step>
+      <Step title="Vérifier l'import">
+        Firby valide la connexion et lance l'import de vos logements et réservations. Vérifiez la liste dans **Logements** une fois l'import terminé.
+      </Step>
+    </Steps>
+  </Tab>
+</Tabs>
+
+## Après la connexion
+
+Une fois votre PMS connecté, Firby importe l'ensemble de vos logements et de vos réservations en quelques minutes. Par la suite, une synchronisation régulière maintient vos données à jour : les nouvelles réservations, les modifications et les annulations sont automatiquement prises en compte avant chaque génération de brouillons.
+
+<Tip>
+  Avant de configurer vos règles de facturation, vérifiez dans **Logements** que la liste affichée dans Firby correspond exactement à ce que vous gérez dans votre PMS. Si un logement est manquant ou en double, corrigez la situation côté PMS, puis déclenchez une synchronisation manuelle depuis **Paramètres > PMS**.
+</Tip>
+
+<Note>
+  **Canaux de réservation pris en charge.** Firby prend en compte toutes les réservations telles que votre PMS les voit, quel que soit leur canal d'origine :
+
+  - **Airbnb**
+  - **Booking.com**
+  - **Vrbo**
+  - **Expedia**
+  - **Réservations directes** (site web, téléphone, e-mail)
+
+  Si votre PMS reçoit des réservations depuis d'autres canaux, elles seront également importées et intégrées dans vos brouillons.
+</Note>

@@ -1,0 +1,48 @@
+# Source: https://firby.fr/mentions-legales
+
+[Retour à l’accueil](https://firby.fr/)
+
+## 01Éditeur du site
+
+Le site firby.fr est édité par **HEXI SAAS**, société par actions simplifiée unipersonnelle (SASU) au capital de 100 €, immatriculée au registre du commerce et des sociétés de Créteil sous le numéro 100 580 562.
+
+- Siège social : 36 rue Michelet, 94460 Valenton, France
+- RCS : Créteil 100 580 562
+- N° TVA intracommunautaire : FR15 100580562
+- E-mail : [contact@firby.fr](mailto:contact@firby.fr)
+
+## 02Directeur de la publication
+
+Le directeur de la publication est le représentant légal de la société HEXI SAAS. Toute question relative au contenu du site peut lui être adressée à [contact@firby.fr](mailto:contact@firby.fr).
+
+## 03Hébergement
+
+Le site est hébergé par :
+
+Hetzner Online GmbH 
+Industriestr. 25, 91710 Gunzenhausen, Allemagne 
+[www.hetzner.com](https://www.hetzner.com)
+
+## 04Propriété intellectuelle
+
+L’ensemble du site (structure, textes, identité visuelle, logo, graphismes, code et autres contenus) est la propriété exclusive de HEXI SAAS ou de ses partenaires, et est protégé par le droit de la propriété intellectuelle. La marque et le logo « Firby » ne peuvent être reproduits sans autorisation écrite préalable.
+
+Toute reproduction, représentation, modification ou exploitation, totale ou partielle, sans autorisation expresse, est interdite et constitue une contrefaçon sanctionnée par les articles L.335-2 et suivants du Code de la propriété intellectuelle.
+
+## 05Données personnelles
+
+Les données transmises via les formulaires du site (nom, e-mail, société, message) sont collectées dans le seul but de répondre à votre demande. Elles ne sont ni cédées ni vendues à des tiers.
+
+Conformément au Règlement (UE) 2016/679 (RGPD) et à la loi « Informatique et Libertés » du 6 janvier 1978 modifiée, vous disposez d’un droit d’accès, de rectification, d’effacement, de portabilité et d’opposition sur vos données. Vous pouvez l’exercer en écrivant à [contact@firby.fr](mailto:contact@firby.fr). Vous pouvez également introduire une réclamation auprès de la CNIL ([www.cnil.fr](https://www.cnil.fr)).
+
+## 06Responsabilité et liens externes
+
+HEXI SAAS s’efforce d’assurer l’exactitude des informations diffusées sur le site, sans pouvoir en garantir l’exhaustivité ni l’absence d’erreurs. Sa responsabilité ne saurait être engagée en cas d’indisponibilité du site ou de dommage résultant de son utilisation.
+
+Le site peut contenir des liens vers des sites tiers. HEXI SAAS n’exerce aucun contrôle sur ces sites et décline toute responsabilité quant à leur contenu.
+
+## 07Droit applicable
+
+Les présentes mentions légales sont régies par le droit français. En cas de litige, et à défaut de résolution amiable, les tribunaux français sont seuls compétents.
+
+Une question d’ordre légal ou relative à vos données ? Écrivez-nous à [contact@firby.fr](mailto:contact@firby.fr).

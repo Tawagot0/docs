@@ -1,0 +1,92 @@
+---
+title: "Premiers pas avec Firby : compte, PMS, règles et brouillons"
+sidebarTitle: "Démarrage rapide"
+description: "Connectez votre PMS, posez vos règles de facturation et recevez vos premiers brouillons de factures propriétaires en quelques minutes seulement."
+---
+
+Firby est opérationnel en quelques minutes : créez votre compte, connectez votre PMS, posez vos règles de facturation, et le lendemain du 1er du mois suivant, vos premiers brouillons vous attendent. Voici les quatre gestes à faire une seule fois.
+
+<Steps>
+  <Step title="Créer votre compte">
+    Rendez-vous sur [app.firby.fr/signup](https://app.firby.fr/signup) et créez votre compte avec votre adresse e-mail professionnelle. L'essai est gratuit et aucune carte bancaire n'est demandée pour commencer.
+
+    Une fois inscrit, vous accédez directement à votre tableau de bord. Firby vous guide pas à pas pour configurer votre espace avant le premier run mensuel.
+
+    <Tip>
+      Utilisez l'adresse e-mail que vous partagez avec votre équipe pour faciliter l'accès multi-utilisateurs dès le départ.
+    </Tip>
+  </Step>
+
+  <Step title="Connecter votre PMS">
+    Depuis **Paramètres > PMS**, choisissez votre logiciel parmi les six PMS pris en charge :
+
+    - **Superhote**
+    - **Guesty**
+    - **Lodgify**
+    - **Smoobu**
+    - **Smily**
+    - **Hostaway**
+
+    Saisissez vos identifiants API ou vos clés d'intégration. Firby les chiffre immédiatement en **AES-256-GCM** : ils ne sont jamais stockés en clair ni renvoyés vers votre navigateur.
+
+    Une fois la connexion établie, vos logements et vos réservations s'importent en quelques minutes. Vérifiez que la liste des logements correspond bien à ce que vous gérez dans votre PMS avant de passer à l'étape suivante.
+
+    Pour le détail des étapes de connexion propres à chaque PMS, consultez le [guide de connexion PMS](/connexion-pms).
+  </Step>
+
+  <Step title="Poser vos règles">
+    Depuis **Paramètres > Règles**, définissez comment facturer chaque propriétaire. Vous n'effectuez cette configuration qu'une seule fois ; Firby l'applique automatiquement chaque mois sans intervention de votre part.
+
+    Vous pouvez configurer :
+
+    | Type de règle | Ce que vous paramétrez |
+    |---|---|
+    | **Commission** | Taux en % sur 5 bases de calcul (total brut, net, net hors ménage, hébergement seul, commission PMS) |
+    | **Forfait ménage** | Montant fixe ou refacturé, au séjour ou à la nuit |
+    | **Forfait linge** | Montant fixe par séjour |
+    | **Check-in** | Forfait par arrivée, avec conditions horaires si besoin |
+    | **Surcharge par logement** | Remplace ou s'ajoute aux règles globales pour un logement spécifique |
+
+    Vous définissez également le comportement sur les cas particuliers : séjours propriétaires, annulations et no-shows (ignorés, facturés à zéro ou avec frais conservés).
+
+    Pour l'ensemble des options disponibles, consultez la [documentation des règles de facturation](/regles/commissions).
+  </Step>
+
+  <Step title="Relire et pousser vers la compta">
+    Le **1er du mois à 05:00**, Firby synchronise une dernière fois vos réservations et génère automatiquement **un brouillon de facture par propriétaire**.
+
+    Depuis **Brouillons**, vous pouvez :
+
+    - Parcourir chaque facture ligne par ligne
+    - Afficher la règle et les réservations sources associées à chaque montant
+    - Corriger manuellement une ligne si nécessaire
+    - Pousser en brouillon vers **Pennylane**, **Qonto**, **Abby** ou **Henrri**
+
+    Le statut de paiement réel — à payer, payée, en retard, partiellement payée — remonte ensuite de votre outil de facturation dans Firby.
+
+    Pour le détail de la génération et du push des brouillons, consultez la [documentation des brouillons](/brouillons/generation).
+  </Step>
+</Steps>
+
+<Note>
+  Vos premiers brouillons seront disponibles le **1er du mois suivant** votre configuration. Si vous vous inscrivez en cours de mois, Firby prend en compte toutes les réservations du mois en cours dès la connexion PMS, et les intègre dans la première génération.
+</Note>
+
+## Prochaines étapes
+
+<CardGroup cols={2}>
+  <Card
+    title="Connexion PMS"
+    icon="plug"
+    href="/connexion-pms"
+  >
+    Instructions détaillées pour connecter Superhote, Guesty, Lodgify, Smoobu, Smily ou Hostaway à Firby.
+  </Card>
+  <Card
+    title="Règles de facturation"
+    icon="sliders"
+    href="/regles/commissions"
+  >
+    Commissions, forfaits, surcharges par logement et gestion des cas particuliers : configurez vos règles une fois pour toutes.
+  </Card>
+</CardGroup>

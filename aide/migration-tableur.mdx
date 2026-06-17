@@ -1,0 +1,81 @@
+---
+title: "Migrer vos règles de tableur vers Firby en 5 étapes"
+sidebarTitle: "Migration Tableur"
+description: "Transposez commissions, forfaits et surcharges depuis votre tableur Excel ou Google Sheets. Migration accompagnée disponible sur contact@firby.fr."
+---
+
+Si vous facturez actuellement vos propriétaires depuis un tableur Excel ou Google Sheets, la migration vers Firby est directe : vous transposez vos règles une seule fois, et Firby les applique automatiquement chaque mois. Cette page vous guide étape par étape, de l'inventaire de vos règles actuelles jusqu'à la validation du premier lot de brouillons.
+
+## Étapes de migration
+
+<Steps>
+  <Step title="Listez vos règles actuelles">
+    Ouvrez votre tableur et notez, pour chaque propriétaire ou groupe de propriétaires :
+
+    - Le **taux de commission** et la **base de calcul** (loyer brut, loyer net, loyer net hors ménage, hébergement seul, ou commission PMS directe)
+    - Le régime de facturation : **HT ou TTC**, à l'arrivée ou au départ du séjour
+    - Les **forfaits** : ménage (refacturé ou fixe), linge, consommables, check-in tardif, maintenance, lignes personnalisées — avec leur mode de calcul (au séjour, à la nuit ou au mois)
+    - Les **exceptions par logement** : tout propriétaire ou bien avec des conditions différentes du modèle général
+    - Le traitement des **cas particuliers** : séjours propriétaire, annulations, no-shows (ignorés, facturés à zéro, ou frais conservés)
+
+    Cet inventaire est la matière première de votre configuration Firby. Plus il est complet, plus la mise en place sera rapide.
+  </Step>
+
+  <Step title="Connectez votre PMS">
+    Depuis Firby, connectez votre PMS pour importer vos logements et réservations. Consultez le guide de connexion pour votre outil : [Connecter votre PMS](/connexion-pms).
+
+    Vos identifiants sont chiffrés en AES-256-GCM dès leur saisie et ne sont jamais renvoyés au navigateur. L'import initial prend généralement quelques minutes.
+  </Step>
+
+  <Step title="Recréez vos règles dans Firby">
+    Allez dans **Règles > Commissions** pour configurer vos taux et bases de calcul, puis dans **Règles > Forfaits** pour les ménages, linges et autres lignes récurrentes.
+
+    Procédez propriétaire par propriétaire en vous appuyant sur l'inventaire établi à l'étape 1. Pour chaque règle, choisissez :
+
+    - La base de commission parmi les 5 disponibles
+    - Le mode HT ou TTC et le moment de facturation
+    - Le mode de calcul de chaque forfait (au séjour, à la nuit, au mois)
+
+    <Tip>
+      Commencez par configurer les règles d'**un seul propriétaire** — celui dont la configuration est la plus représentative de votre modèle général. Validez son premier brouillon avant de répliquer la configuration aux autres. Cela vous permet de détecter et corriger un éventuel écart dès le début, sans avoir à revenir sur toutes les règles.
+    </Tip>
+  </Step>
+
+  <Step title="Ajoutez les surcharges par logement">
+    Pour chaque propriété dont les conditions diffèrent du modèle général (taux différent, forfait spécifique, ligne personnalisée), ajoutez une surcharge directement dans les paramètres du logement concerné.
+
+    Une surcharge remplace la règle générale uniquement pour le champ concerné et n'affecte pas les autres logements. Consultez le guide dédié : [Configurer les surcharges par logement](/regles/surcharges).
+  </Step>
+
+  <Step title="Comparez la première fournée de brouillons">
+    Lors de la prochaine génération (le 1er du mois à 05:00), Firby produit un brouillon par propriétaire. Ouvrez chaque brouillon et comparez-le **ligne par ligne** avec la dernière facture issue de votre tableur :
+
+    - Le montant de commission correspond-il à ce que vous calculiez manuellement ?
+    - Chaque forfait est-il présent et au bon montant ?
+    - Les surcharges de logement sont-elles bien appliquées ?
+
+    Cliquez sur chaque ligne pour afficher la règle appliquée et les réservations sources — c'est la façon la plus rapide d'identifier l'origine d'un éventuel écart et de le corriger dans vos règles.
+  </Step>
+</Steps>
+
+## Migration accompagnée
+
+Vous préférez ne pas faire cela seul ? L'équipe Firby propose une **migration accompagnée** : transmettez votre tableur actuel à [contact@firby.fr](mailto:contact@firby.fr), et l'équipe vous aide à transposer vos commissions, forfaits et surcharges directement dans votre compte. C'est gratuit pendant la période d'essai.
+
+<Note>
+  La période d'essai gratuit est conçue précisément pour cette phase de comparaison. Faites tourner Firby en parallèle de votre tableur pendant un mois complet, comparez les résultats, puis souscrivez une fois que vous avez la certitude que chaque règle est correctement configurée. Aucune carte bancaire n'est requise pour démarrer.
+</Note>
+
+## Points de vigilance courants
+
+<Accordion title="Ma commission se calcule sur une base que je ne retrouve pas dans Firby">
+  Firby propose cinq bases de calcul : total brut, total net, total net hors ménage, hébergement seul, et commission déjà calculée par le PMS. Si votre tableur utilise une base différente, examinez quelle colonne de votre PMS vous utilisiez comme point de départ — dans la grande majorité des cas, elle correspond à l'une de ces cinq bases. En cas de doute, contactez [contact@firby.fr](mailto:contact@firby.fr).
+</Accordion>
+
+<Accordion title="Certains propriétaires ont des règles très différentes">
+  C'est le cas d'usage standard des surcharges par logement. Définissez une règle générale qui couvre la majorité de vos propriétaires, puis ajoutez une surcharge pour chaque exception. Les surcharges n'interfèrent pas entre elles et ne modifient que les champs que vous spécifiez.
+</Accordion>
+
+<Accordion title="Je facture certains propriétaires différemment selon la saison">
+  Pour les variations saisonnières, vous pouvez ajuster temporairement les règles ou surcharges d'un logement en début de saison, puis les remettre à leurs valeurs habituelles à la fin. Chaque modification est horodatée dans le journal de Firby pour que vous puissiez retracer l'historique.
+</Accordion>

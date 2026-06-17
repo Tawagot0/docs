@@ -1,0 +1,60 @@
+---
+title: "Sécurité Firby : chiffrement AES-256-GCM et conformité RGPD"
+sidebarTitle: "Sécurité"
+description: "Découvrez comment Firby protège vos identifiants PMS avec AES-256-GCM, assure la conformité RGPD et garantit la suppression des données sous 30 jours."
+---
+
+Firby manipule des données sensibles : les clés API de votre PMS, vos règles de commission et les données financières de vos propriétaires. Cette page détaille les mesures en place pour les protéger, à qui elles appartiennent, et comment exercer vos droits.
+
+## Chiffrement des identifiants PMS
+
+Lorsque vous connectez votre PMS (Superhote, Guesty, Lodgify, Smoobu, Smily, Hostaway), vos identifiants et clés API sont chiffrés en **AES-256-GCM** dès leur réception par Firby. Ce chiffrement symétrique authentifié garantit à la fois la confidentialité et l'intégrité des données stockées.
+
+<CardGroup cols={2}>
+  <Card title="Chiffrement AES-256-GCM" icon="shield-halved">
+    Vos identifiants PMS sont chiffrés avec l'un des algorithmes les plus robustes disponibles. La clé de chiffrement n'est jamais exposée dans l'interface.
+  </Card>
+  <Card title="Jamais renvoyés au navigateur" icon="eye-slash">
+    Une fois saisis, vos identifiants PMS ne sont jamais retournés au navigateur ni affichés en clair dans l'interface. Ils sont uniquement utilisés côté serveur pour synchroniser vos réservations.
+  </Card>
+</CardGroup>
+
+## Propriété des données
+
+Vos données vous appartiennent. Les réservations importées depuis votre PMS, les règles de facturation que vous configurez et les brouillons de factures générés sont votre propriété exclusive, conformément aux CGV de Firby (HEXI SAAS).
+
+<Note>
+  Firby n'utilise jamais vos données à d'autres fins que la fourniture du service. Vos données ne sont ni vendues, ni partagées avec des tiers à des fins commerciales ou publicitaires. Les seules transmissions effectuées sont celles que vous initiez explicitement, vers les outils comptables que vous avez vous-même connectés (Pennylane, Qonto, Abby, Henrri), dans le cadre direct de la prestation.
+</Note>
+
+## Suppression des données
+
+En cas de clôture de votre compte Firby, l'intégralité de vos données — identifiants PMS, règles de facturation, brouillons générés — est supprimée dans un délai de **30 jours**, conformément aux CGV. Ce délai est prévu pour vous permettre d'exporter ce dont vous avez besoin avant la suppression définitive.
+
+<Warning>
+  La suppression est irréversible. Avant de demander la clôture de votre compte, pensez à exporter vos brouillons et factures si vous souhaitez les conserver.
+</Warning>
+
+## Conformité RGPD
+
+Firby est édité par **HEXI SAAS** (SASU, RCS Créteil n° 100 580 562, siège : 36 rue Michelet, 94460 Valenton), soumise au droit français et au Règlement Général sur la Protection des Données (RGPD).
+
+Vous disposez des droits suivants sur vos données personnelles :
+
+| Droit | Description |
+|---|---|
+| **Accès** | Obtenir une copie des données vous concernant traitées par Firby |
+| **Rectification** | Corriger des informations inexactes ou incomplètes |
+| **Effacement** | Demander la suppression de vos données |
+| **Portabilité** | Recevoir vos données dans un format structuré et lisible par machine |
+| **Opposition** | Vous opposer à certains traitements de vos données |
+
+Pour exercer l'un de ces droits, écrivez à [contact@firby.fr](mailto:contact@firby.fr) depuis l'adresse associée à votre compte.
+
+## Signaler un problème de sécurité
+
+Si vous constatez un comportement suspect ou pensez avoir identifié une vulnérabilité, contactez immédiatement l'équipe Firby à [contact@firby.fr](mailto:contact@firby.fr). Toutes les remontées sont traitées en priorité.
+
+<Tip>
+  Pour limiter les risques côté PMS, vérifiez que les droits accordés à la clé API que vous utilisez dans Firby sont limités à la lecture des réservations. La plupart des PMS supportés permettent de créer des clés API à permissions restreintes.
+</Tip>

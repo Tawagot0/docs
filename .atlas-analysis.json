@@ -1,0 +1,104 @@
+{
+  "projectType": "saas",
+  "projectName": "Firby",
+  "projectDescription": "Firby automatise la facturation mensuelle des propriétaires pour les conciergeries de location courte durée, en lisant les réservations depuis votre PMS et en composant des brouillons de factures prêts à pousser vers vos outils comptables.",
+  "theme": "almond",
+  "primaryColor": "#cc0505",
+  "lightColor": "#e07c7c",
+  "darkColor": null,
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Guide",
+        "groups": [
+          {
+            "group": "Démarrer",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "connexion-pms"
+            ]
+          },
+          {
+            "group": "Règles de facturation",
+            "pages": [
+              "regles/commissions",
+              "regles/forfaits",
+              "regles/surcharges",
+              "regles/cas-particuliers"
+            ]
+          },
+          {
+            "group": "Brouillons & validation",
+            "pages": [
+              "brouillons/generation",
+              "brouillons/relecture",
+              "brouillons/traçabilite"
+            ]
+          },
+          {
+            "group": "Intégrations compta",
+            "pages": [
+              "integrations/pennylane",
+              "integrations/qonto",
+              "integrations/abby",
+              "integrations/henrri"
+            ]
+          },
+          {
+            "group": "Portail propriétaires",
+            "pages": [
+              "portail/invitation",
+              "portail/suivi-paiements"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Aide",
+        "groups": [
+          {
+            "group": "Compte & abonnement",
+            "pages": [
+              "aide/compte",
+              "aide/abonnement",
+              "aide/securite"
+            ]
+          },
+          {
+            "group": "FAQ",
+            "pages": [
+              "aide/faq",
+              "aide/migration-tableur"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Génération automatique de brouillons de factures le 1er du mois à 05h00",
+    "Connexion à 6 PMS (Superhote, Guesty, Lodgify, Smoobu, Smily, Hostaway)",
+    "Push vers Pennylane, Qonto, Abby et Henrri",
+    "Règles de commission sur 5 bases de calcul",
+    "Forfaits ménage, linge, consommables, check-in et lignes personnalisées",
+    "Surcharges par logement",
+    "Traçabilité au centime — chaque ligne reliée à ses réservations et sa règle",
+    "Portail propriétaires pour consultation des factures et statuts de paiement",
+    "Suivi des statuts de paiement en temps réel depuis l'outil compta",
+    "Identifiants PMS chiffrés AES-256-GCM",
+    "Essai gratuit sans carte bancaire, sans engagement"
+  ],
+  "publicApiSurface": [
+    "Connexion PMS (Superhote, Guesty, Lodgify, Smoobu, Smily, Hostaway)",
+    "Push brouillon vers Pennylane",
+    "Push brouillon vers Qonto",
+    "Push brouillon vers Abby",
+    "Push brouillon vers Henrri",
+    "Règles : commission (5 bases), HT/TTC, taux de TVA",
+    "Règles : forfaits ménage, linge, consommables, check-in, maintenance, lignes personnalisées",
+    "Règles : surcharges par logement",
+    "Règles : traitement des séjours propriétaire, annulations, no-shows",
+    "Portail propriétaires : invitation par email, consultation factures et statuts"
+  ]
+}

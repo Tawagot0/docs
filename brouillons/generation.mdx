@@ -1,0 +1,55 @@
+---
+title: "Génération automatique des brouillons de facturation"
+sidebarTitle: "Génération"
+description: "Chaque 1er du mois à 05h00, Firby synchronise vos réservations, applique vos règles et compose un brouillon de facture par propriétaire, prêt à relire."
+---
+
+Firby suit un cycle mensuel entièrement automatique : sans que vous ayez besoin d'intervenir, il lit vos réservations dans votre PMS, applique les règles que vous avez configurées et produit un brouillon de facture prêt à relire pour chaque propriétaire. Vous n'avez plus à exporter, calculer ni ressaisir — le travail de composition est terminé avant que votre journée commence.
+
+## Le cycle de génération
+
+<Steps>
+  <Step title="Synchronisation PMS">
+    Le 1er du mois à 05h00, Firby se connecte à votre PMS (Superhote, Guesty, Lodgify, Smoobu, Smily ou Hostaway) et importe toutes les réservations encaissées ou sorties au cours du mois écoulé. Chaque réservation est horodatée et conservée dans le journal de synchronisation.
+  </Step>
+  <Step title="Application des règles">
+    Firby applique les règles de facturation que vous avez configurées : taux de commission sur la base de votre choix (loyers bruts, nets, hébergement seul, etc.), forfaits ménage, linge, consommables ou check-in, et surcharges propres à chaque logement. Les règles s'appliquent ligne à ligne, sans agrégat opaque.
+  </Step>
+  <Step title="Composition des brouillons">
+    Un brouillon de facture est créé pour chaque propriétaire ayant des réservations à facturer ce mois-ci. Chaque ligne du brouillon est reliée à sa réservation source et à la règle qui l'a produite — le calcul exact est visible d'un clic.
+  </Step>
+  <Step title="Notification">
+    Une fois la génération terminée, vous recevez une notification vous informant que vos brouillons sont prêts. Vous pouvez alors vous connecter à Firby pour commencer votre relecture.
+  </Step>
+</Steps>
+
+## Ce que contient un brouillon
+
+Chaque brouillon présente l'ensemble des lignes de facturation du propriétaire pour le mois concerné. Pour chaque ligne, vous pouvez consulter :
+
+<CardGroup cols={2}>
+  <Card title="Règle appliquée" icon="sliders">
+    Le nom de la règle (par exemple « Commission conciergerie — 20 % HT sur loyers encaissés »), son taux et sa base de calcul.
+  </Card>
+  <Card title="Réservations source" icon="calendar">
+    La liste des réservations incluses dans le calcul, identifiées par leur référence PMS, leur date et leur montant.
+  </Card>
+  <Card title="Montant HT" icon="calculator">
+    Le montant hors taxes calculé à partir des réservations source et de la règle, exprimé en centimes entiers pour éviter tout écart d'arrondi.
+  </Card>
+  <Card title="TVA et montant TTC" icon="receipt">
+    La TVA appliquée ligne à ligne selon le taux configuré (franchise ou régime normal), ainsi que le montant toutes taxes comprises.
+  </Card>
+</CardGroup>
+
+## Statut « brouillon »
+
+Un brouillon reste en statut **Brouillon** tant que vous ne l'avez pas poussé vers votre outil comptable. À ce stade, aucune facture n'est transmise à votre propriétaire, aucun document n'est envoyé et aucun statut de paiement n'est créé dans votre logiciel de facturation.
+
+<Note>
+  Firby ne transmet jamais rien sans votre action explicite. Vous êtes le seul à déclencher l'envoi vers Pennylane, Qonto, Abby ou Henrri en cliquant sur le bouton **Pousser**. Le contrôle reste entièrement de votre côté.
+</Note>
+
+## Brouillons signalés
+
+Si Firby détecte une anomalie lors de la composition — donnée manquante dans le PMS, réservation sans logement associé, règle ne correspondant à aucune ligne — le brouillon concerné est marqué d'un indicateur d'attention dans la liste. Ouvrez le brouillon pour consulter le détail du problème : Firby précise la ligne concernée et la raison du signalement afin que vous puissiez corriger la configuration ou ajuster la ligne manuellement avant de pousser.

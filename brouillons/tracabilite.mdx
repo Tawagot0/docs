@@ -1,0 +1,58 @@
+---
+title: "Traçabilité complète des factures Firby au centime près"
+sidebarTitle: "Traçabilité"
+description: "Chaque ligne expose la règle appliquée, les réservations source et le calcul exact en centimes entiers — consultable des mois après la génération."
+---
+
+Avec Firby, chaque centime présent dans un brouillon peut être expliqué et justifié. Il n'existe aucun agrégat opaque : chaque ligne de facturation expose la règle qui l'a produite, les réservations qu'elle couvre et le calcul arithmétique exact, accessible d'un clic depuis n'importe quel brouillon ou facture validée, même plusieurs mois après la génération.
+
+## Ce que la traçabilité couvre
+
+<Accordion title="Règle appliquée">
+  Pour chaque ligne, Firby indique la règle exacte qui a produit le montant : son nom, son type (commission, forfait, surcharge), le taux ou tarif unitaire configuré et la base de calcul retenue (loyers bruts, nets, nets hors ménage, hébergement seul, ou commission PMS). Vous savez immédiatement pourquoi cette ligne existe et comment elle a été paramétrée.
+</Accordion>
+
+<Accordion title="Réservations source">
+  Chaque ligne liste les réservations incluses dans son calcul, identifiées par leur référence PMS (ex. `#SH-5821412`), leur date d'arrivée, leur durée et le montant encaissé retenu. Si plusieurs réservations contribuent à une même ligne, elles apparaissent toutes dans le détail.
+</Accordion>
+
+<Accordion title="Calcul exact">
+  Firby affiche le calcul arithmétique complet, étape par étape. Par exemple :
+
+  > (980,00 € + 580,00 €) × 20 % = **312,00 € HT**
+
+  Tous les calculs sont effectués en centimes entiers — il n'existe pas d'écart de virgule flottante. Le résultat que vous voyez est exactement celui qui figure sur la facture.
+</Accordion>
+
+<Accordion title="Horodatage">
+  Chaque brouillon porte la date et l'heure exactes de sa génération automatique (le 1er du mois à 05h00) ainsi que, après action de votre part, la date et l'heure du push vers votre outil comptable. Ces deux timestamps sont conservés indéfiniment.
+</Accordion>
+
+## Accéder au détail d'une ligne
+
+Depuis n'importe quel brouillon ou facture validée, cliquez sur une ligne de facturation pour ouvrir son panneau de traçabilité. Vous y trouvez la règle appliquée, la liste des réservations source et le calcul détaillé. Ce panneau est disponible aussi bien sur les brouillons en attente que sur les factures déjà poussées vers votre outil comptable.
+
+## Journal des synchronisations
+
+Chaque synchronisation avec votre PMS est enregistrée automatiquement dans le journal de Firby.
+
+Pour consulter le journal, accédez à **Paramètres > Journal**. Vous y trouverez, pour chaque synchronisation :
+
+- La date et l'heure exactes de la synchronisation
+- Le PMS interrogé et le nombre de réservations importées
+- Le statut de la synchronisation (réussie, partielle ou en erreur)
+- Le détail des éventuelles anomalies détectées
+
+<Note>
+  La traçabilité est disponible de manière rétroactive : vous pouvez consulter le détail d'un brouillon ou d'une facture générés il y a plusieurs mois, avec la même précision qu'au moment de la génération. Aucune donnée de calcul n'est effacée après un push.
+</Note>
+
+## Répondre aux questions d'un propriétaire
+
+Si un propriétaire conteste une ligne de sa facture, vous disposez de tous les éléments pour lui répondre précisément. Ouvrez la facture concernée, cliquez sur la ligne en question et partagez :
+
+1. **La règle appliquée** — son nom, son taux et la base retenue, tels que vous les avez configurés.
+2. **Les réservations source** — chaque référence PMS avec sa date et son montant encaissé.
+3. **Le calcul exact** — le détail arithmétique, centime par centime.
+
+Cette transparence réduit les échanges de clarification et renforce la confiance de vos propriétaires dans votre processus de facturation.

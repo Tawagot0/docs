@@ -1,0 +1,80 @@
+---
+title: "Firby"
+description: "Facturation automatique pour conciergeries — brouillons prêts le 1er du mois à 05h00."
+mode: custom
+---
+
+<div className="mx-auto flex w-full max-w-[720px] flex-col gap-12 px-4 py-10 lg:gap-14 lg:py-16">
+  <div className="flex flex-col items-center gap-6">
+    <div className="flex max-w-[480px] flex-col gap-2 text-center">
+      <h1 className="text-2xl font-semibold tracking-tight text-gray-900 dark:text-gray-50">
+        Le 1ᵉʳ du mois à 05h00, vos factures sont déjà écrites.
+      </h1>
+      <p className="text-balance text-base text-gray-600 dark:text-gray-400">
+        Firby lit vos réservations dans votre PMS, applique vos règles et compose un brouillon de facture par propriétaire — prêt à pousser vers Pennylane, Qonto, Abby ou Henrri.
+      </p>
+    </div>
+  </div>
+
+  <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+    <a
+      href="/quickstart"
+      className="group flex flex-col outline-none"
+    >
+      <div
+        className="kb-feature-card relative flex h-[170px] items-center justify-center overflow-hidden rounded-2xl ring-1 ring-gray-100 transition group-hover:ring-gray-200 dark:ring-white/[0.08] dark:group-hover:ring-white/15 saturate-50 group-hover:saturate-100"
+      >
+        <div className="relative flex items-center justify-center">
+          <Icon icon="rocket" size={36} className="!bg-white" />
+        </div>
+      </div>
+      <div className="flex flex-col gap-1 pt-4">
+        <span className="text-base font-medium text-gray-900 dark:text-gray-50">Démarrer en 4 étapes</span>
+        <span className="text-sm leading-5 text-gray-600 dark:text-gray-400">
+          Connectez votre PMS, posez vos règles et recevez votre première fournée de brouillons.
+        </span>
+      </div>
+    </a>
+
+    <a
+      href="/connexion-pms"
+      className="group flex flex-col outline-none"
+    >
+      <div
+        className="kb-feature-card relative flex h-[170px] items-center justify-center overflow-hidden rounded-2xl ring-1 ring-gray-100 transition group-hover:ring-gray-200 dark:ring-white/[0.08] dark:group-hover:ring-white/15 saturate-50 group-hover:saturate-100"
+      >
+        <div className="relative flex items-center justify-center">
+          <Icon icon="plug" size={36} className="!bg-white" />
+        </div>
+      </div>
+      <div className="flex flex-col gap-1 pt-4">
+        <span className="text-base font-medium text-gray-900 dark:text-gray-50">Connexion PMS</span>
+        <span className="text-sm leading-5 text-gray-600 dark:text-gray-400">
+          Superhote, Guesty, Lodgify, Smoobu, Smily, Hostaway — branchez votre PMS en quelques minutes.
+        </span>
+      </div>
+    </a>
+  </div>
+
+  <div className="flex flex-col gap-4">
+    <h2 className="text-lg font-medium tracking-tight text-gray-900 dark:text-gray-50">Explorer</h2>
+
+    <Columns cols={2}>
+      <Card title="Règles de facturation" icon="sliders" iconType="light" href="/regles/commissions">
+        Commissions, forfaits ménage, linge, check-in et surcharges par logement.
+      </Card>
+      <Card title="Brouillons & validation" icon="file-check" iconType="light" href="/brouillons/generation">
+        Génération automatique le 1er du mois, relecture et traçabilité au centime.
+      </Card>
+    </Columns>
+
+    <Columns cols={2}>
+      <Card title="Intégrations compta" icon="link" iconType="light" href="/integrations/pennylane">
+        Poussez vos brouillons vers Pennylane, Qonto, Abby ou Henrri en un clic.
+      </Card>
+      <Card title="Portail propriétaires" icon="users" iconType="light" href="/portail/invitation">
+        Invitez vos propriétaires à consulter leurs factures et statuts de paiement.
+      </Card>
+    </Columns>
+  </div>
+</div>

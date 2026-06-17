@@ -1,0 +1,322 @@
+# Source: https://firby.fr/
+
+Facturation automatique pour conciergeries
+
+# Le 1ᵉʳ du mois à 05:00, vos factures sont déjà écrites.
+
+Firby lit vos réservations dans votre PMS, applique vos règles — commissions, ménage, linge, check-in — et compose une facture brouillon par propriétaire, prête à pousser vers Pennylane, Qonto, Abby ou Henrri.
+
+[Essayer gratuitement](https://app.firby.fr/signup) [Voir ce que ça change](https://firby.fr/#cloture)
+
+- Essai gratuit, sans carte bancaire
+- Connexion PMS en quelques minutes
+- Rien ne part sans votre relecture
+
+Firby · FacturesBrouillons d’avril · 05:00
+
+Générée automatiquement le 1ᵉʳ avril, 05:00
+
+Facture — brouillon
+
+Mme Lefèvre · Villa Les Embruns
+
+Mars 2026
+
+- Commission conciergerie
+ 
+ 20 % HT sur 4 320,00 € de loyers encaissés
+ 
+ 864,00 €
+ 
+- Forfait ménage
+ 
+ 6 séjours × 45,00 €
+ 
+ 270,00 €
+ 
+- Forfait linge
+ 
+ 6 séjours × 18,00 €
+ 
+ 108,00 €
+ 
+- Check-in tardif
+ 
+ 1 arrivée après 22 h × 25,00 €
+ 
+ 25,00 €
+ 
+
+Total HT
+
+1 267,00 €
+
+TVA 20 %
+
+253,40 €
+
+Total TTC
+
+1 520,40 €
+
+Chaque ligne est reliée à ses réservations.Prêt à pousser vers Pennylane
+
+Branché à votre PMS et à votre compta, sans ressaisie.
+
+- ![](https://firby.fr/logos/superhote.png)Superhote
+- ![](https://firby.fr/logos/guesty.png)Guesty
+- ![](https://firby.fr/logos/lodgify.png)Lodgify
+- ![](https://firby.fr/logos/smoobu.png)Smoobu
+- ![](https://firby.fr/logos/smily.png)Smily
+- ![](https://firby.fr/logos/hostaway.png)Hostaway
+- ![](https://firby.fr/logos/pennylane.png)Pennylane
+- ![](https://firby.fr/logos/qonto.png)Qonto
+- ![](https://firby.fr/logos/abby.png)Abby
+- ![](https://firby.fr/logos/henrri.png)Henrri
+
+Avant / après
+
+## Votre clôture de fin de mois, avant et après.
+
+Facturer les propriétaires est la dernière corvée que votre PMS ne fait pas pour vous. C’est le travail de Firby.
+
+### Aujourd’hui, à la main
+
+- Exporter les réservations du PMS, logement par logement.
+ 
+- Recalculer commissions, ménages et linge dans le tableur.
+ 
+- Repérer les cas particuliers : le check-in tardif, la surcharge du studio, le séjour du propriétaire.
+ 
+- Ressaisir chaque facture dans l’outil de facturation.
+ 
+- Envoyer les PDF un par un, puis répondre aux questions.
+ 
+
+Des heures de tableur — et le doute d’avoir oublié une ligne.
+
+### Avec Firby
+
+- Le 1ᵉʳ à 05:00, un brouillon par propriétaire vous attend.
+ 
+- Relisez : chaque ligne affiche sa règle et ses réservations.
+ 
+- Poussez vers Pennylane, Qonto, Abby ou Henrri.
+ 
+
+Relire, valider. C’est fini.
+
+Bénéfices
+
+## Ce que ça change, concrètement.
+
+### Vos soirées de fin de mois, rendues.
+
+La facturation suit le calendrier, plus votre agenda. Vous n’intervenez que pour relire et valider — le reste s’est fait sans vous.
+
+### Zéro erreur de calcul.
+
+Tous les calculs en centimes entiers, la TVA ligne à ligne, HT/TTC toujours explicite. Une règle posée une fois s’applique chaque mois, sans variation.
+
+### Rien ne part sans vous.
+
+Firby produit des brouillons. Vous relisez, corrigez si besoin, et c’est vous qui poussez vers la compta. Le contrôle reste de votre côté.
+
+### Traçable au centime.
+
+Chaque montant se justifie : la règle appliquée, les réservations source, le calcul exact — à un clic, même des mois plus tard.
+
+Comment ça marche
+
+## Du PMS à votre compta, sans ressaisie.
+
+Quatre gestes la première fois. Ensuite, la facturation suit le rythme du calendrier, plus le vôtre.
+
+1. 1.
+ 
+ ### Connectez votre PMS
+ 
+ Superhote, Guesty, Lodgify, Smoobu, Smily ou Hostaway. Logements et réservations s’importent en quelques minutes ; vos identifiants restent chiffrés (AES-256-GCM).
+ 
+2. 2.
+ 
+ ### Posez vos règles, une fois
+ 
+ Commission sur cinq bases de calcul, HT ou TTC. Forfaits ménage, linge, consommables, check-in. Surcharges propres à chaque logement.
+ 
+3. 3.
+ 
+ ### Firby compose les brouillons
+ 
+ Le 1ᵉʳ du mois à 05:00, Firby synchronise vos réservations puis compose une facture par propriétaire, chaque ligne reliée à sa réservation et à sa règle.
+ 
+4. 4.
+ 
+ ### Poussez vers votre compta
+ 
+ Relisez, corrigez, poussez en brouillon vers Pennylane, Qonto, Abby ou Henrri. Le statut réel — à payer, payée, en retard — remonte ensuite dans Firby.
+ 
+
+[Connecter mon PMS](https://app.firby.fr/signup)
+
+Logements et réservations importés en quelques minutes.
+
+Fonctionnalités
+
+## Vos règles ont des exceptions. Firby aussi.
+
+Cinq bases de commission, des forfaits au séjour, à la nuit ou au mois, des surcharges par logement : tout ce que votre tableur encode aujourd’hui à la main.
+
+### Des règles au cordeau
+
+- Commission sur cinq bases. Total brut, net, net hors ménage, hébergement seul — ou la commission déjà calculée par votre PMS.
+- HT ou TTC, à l’arrivée ou au départ. Le taux et le mois de facturation suivent votre convention, pas l’inverse.
+- Forfaits au séjour, à la nuit ou au mois. Ménage refacturé ou fixe, linge, consommables, check-in, maintenance, lignes personnalisées.
+- Surcharges par hébergement. Le studio du Vieux-Port n’a pas les tarifs de la villa — chaque logement peut surcharger ses forfaits.
+- Séjours propriétaire, annulations, no-shows. Ignorés, facturés à zéro ou frais conservés : vous décidez, règle par règle.
+- TVA : franchise ou régime normal. Taux par forfait, mention HT/TTC toujours explicite.
+
+### Un suivi qui ne s’arrête pas au push
+
+- Le statut réel, pas un « envoyé » décoratif. À payer, payée, en retard, partiellement payée : le statut remonte de votre outil de facturation dans Firby.
+- Chaque ligne traçable. La règle et les réservations qui expliquent un montant, à un clic.
+- Journal complet. Chaque synchronisation et chaque push, horodatés et consultables.
+- Tous vos canaux. Airbnb, Booking, Vrbo, Expedia, réservations directes — tels que votre PMS les voit.
+- Vos accès sous clé. Identifiants PMS chiffrés en AES-256-GCM, jamais renvoyés au navigateur.
+- Des centimes, pas des arrondis. Tous les calculs en centimes entiers — l’écart flottant n’existe pas.
+
+### Un portail pour vos propriétaires
+
+Invitez-les par email : ils consultent leurs factures et leur statut de paiement en ligne — vous arrêtez de les renvoyer une à une chaque mois.
+
+Mes factures
+
+Mme Lefèvre · factures émises par Conciergerie du Port
+
+- Mars 2026
+ 
+ Villa Les Embruns
+ 
+ 1 520,40 €À payer
+ 
+- Février 2026
+ 
+ Villa Les Embruns
+ 
+ 1 386,00 €Payée
+ 
+
+Statuts synchronisés depuis l’outil de facturation.
+
+Traçabilité
+
+## Chaque ligne sait d’où elle vient.
+
+Pas d’agrégat opaque : sélectionnez une ligne, Firby montre la règle appliquée et les réservations qui la justifient, au centime près.
+
+Le Sextant — T2 Vieux-Port
+
+Mars · extrait
+
+Commission conciergerie2 réservations encaissées312,00 € HTForfait ménage2 séjours, facturé à la sortie90,00 € HTSurcharge linge king-sizepropre à ce logement24,00 € HT
+
+Sélectionnez une ligne pour voir son origine.
+
+Règle appliquée
+
+Commission — 20 % HT sur loyers encaissés
+
+Réservations source
+
+- #SH-5821412 – 16 mars · 4 nuits980,00 €
+- #SH-5836722 – 28 mars · 6 nuits580,00 €
+
+(980,00 € + 580,00 €) × 20 % = **312,00 € HT**
+
+Intégrations
+
+## Branché sur vos outils, pas à leur place.
+
+Six PMS d’un côté, quatre outils de facturation de l’autre. Entre les deux, vos règles.
+
+Vos réservations
+
+- ![](https://firby.fr/logos/superhote.png)Superhote
+- ![](https://firby.fr/logos/guesty.png)Guesty
+- ![](https://firby.fr/logos/lodgify.png)Lodgify
+- ![](https://firby.fr/logos/smoobu.png)Smoobu
+- ![](https://firby.fr/logos/smily.png)Smily
+- ![](https://firby.fr/logos/hostaway.png)Hostaway
+
+import des réservations
+
+Firby
+
+vos règles · vos brouillons · votre contrôle
+
+push en brouillon
+
+Votre facturation
+
+- ![](https://firby.fr/logos/pennylane.png)Pennylane
+- ![](https://firby.fr/logos/qonto.png)Qonto
+- ![](https://firby.fr/logos/abby.png)Abby
+- ![](https://firby.fr/logos/henrri.png)Henrri
+
+La numérotation définitive et la conformité e-invoicing (Factur-X, plateformes PDP) restent portées par votre outil de facturation : Firby prépare des brouillons traçables, votre outil garde le dernier mot.
+
+[Brancher mes outils](https://app.firby.fr/signup)
+
+Essai gratuit, sans carte bancaire.
+
+Tarifs
+
+## Commencez sans rien risquer.
+
+Essayez Firby sur vos propres données : connectez votre PMS, posez vos règles et comparez la première fournée de brouillons à votre tableur.
+
+### Essai gratuit, sans carte bancaire
+
+Créez votre compte et testez sur vos vraies réservations. Aucune carte demandée pour essayer.
+
+### Migration accompagnée
+
+On pose vos règles avec vous — commissions, forfaits, surcharges — à partir de votre tableur actuel.
+
+### Support en français
+
+Une question sur une règle, un calcul, un push ? L’équipe vous répond en français.
+
+### Sans engagement
+
+Abonnement mensuel, résiliable à tout moment. Vos données restent les vôtres.
+
+[Essayer gratuitement](https://app.firby.fr/signup)
+
+Sans carte bancaire, sans engagement.
+
+FAQ
+
+## Les questions qu’on nous pose avant de se lancer.
+
+### Mes identifiants PMS et mes accès compta sont-ils en sécurité ?
+
+### Est-ce que je garde le contrôle avant l’envoi ?
+
+### Et la facturation électronique (Factur-X, PDP) ?
+
+### Mes règles de facturation sont particulières. Firby saura suivre ?
+
+### Comment je migre depuis mon tableur ?
+
+### Y a-t-il un engagement ?
+
+## Votre prochaine clôture peut se passer de vous.
+
+Créez votre compte, connectez votre PMS : la première génération de brouillons vous attend le 1ᵉʳ du mois.
+
+[Essayer gratuitement](https://app.firby.fr/signup)
+
+- Essai gratuit, sans carte bancaire
+- Sans engagement
+- Support en français

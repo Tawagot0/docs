@@ -1,0 +1,91 @@
+---
+title: "Paramétrer les six forfaits de facturation dans Firby"
+sidebarTitle: "Forfaits"
+description: "Les six forfaits Firby — ménage, linge, consommables, check-in, maintenance, ligne personnalisée — facturés au séjour, à la nuit ou au mois."
+---
+
+Les forfaits sont des lignes de facturation à montant fixe qui viennent compléter la commission conciergerie sur chaque facture propriétaire. Vous les configurez une fois et Firby les applique automatiquement à chaque clôture mensuelle, en comptant les séjours, les nuits ou le mois selon l'unité choisie.
+
+## Types de forfaits disponibles
+
+| Forfait | Description | Unités possibles |
+|---|---|---|
+| **Ménage** | Frais de nettoyage entre deux séjours. Peut être refacturé au réel ou fixé à un montant forfaitaire. | Par séjour, par mois |
+| **Linge** | Fourniture et lavage du linge de maison (draps, serviettes). | Par séjour |
+| **Consommables** | Produits d'accueil, café, savonnettes, etc. | Par séjour |
+| **Check-in** | Prestation d'accueil, y compris les arrivées en dehors des horaires standards. | Par séjour |
+| **Maintenance** | Intervention technique ou petite réparation récurrente. | Par séjour, par mois |
+| **Ligne personnalisée** | Libellé libre, montant libre — pour tout ce qui ne rentre dans aucune case. | Par séjour, par nuit, par mois |
+
+## Unités de facturation
+
+Firby calcule chaque forfait selon l'unité que vous avez configurée.
+
+<CardGroup cols={3}>
+  <Card title="Par séjour" icon="house">
+    Le montant est multiplié par le nombre de séjours survenus dans le mois. C'est l'unité la plus courante pour le ménage et le linge.
+  </Card>
+  <Card title="Par nuit" icon="moon">
+    Le montant est multiplié par le nombre de nuits réservées dans le mois. Utile pour les consommables quand la consommation est proportionnelle à la durée.
+  </Card>
+  <Card title="Par mois" icon="calendar">
+    Un montant fixe est facturé chaque mois, indépendamment du nombre de séjours. Idéal pour un abonnement maintenance ou une prestation récurrente.
+  </Card>
+</CardGroup>
+
+## Ménage refacturé ou forfait fixe
+
+Le forfait ménage dispose de deux modes distincts, adaptés à vos pratiques de facturation.
+
+<Tabs>
+  <Tab title="Ménage refacturé">
+    Firby reprend le montant de ménage tel qu'il apparaît dans chaque réservation de votre PMS, et le refacture à l'identique au propriétaire. Ce mode est utile lorsque les frais de ménage varient selon la plateforme ou la durée du séjour.
+
+    **Avantage :** transparence totale — le propriétaire voit exactement ce que le voyageur a payé pour le ménage.
+  </Tab>
+  <Tab title="Forfait fixe">
+    Vous définissez un montant fixe par séjour (ex. : 45 €), appliqué uniformément quelle que soit la plateforme ou la durée du séjour. Ce mode simplifie la lecture de la facture et garantit une marge prévisible sur chaque prestation ménage.
+
+    **Avantage :** lisibilité et prévisibilité pour vous comme pour le propriétaire.
+  </Tab>
+</Tabs>
+
+## Exemple de calcul multi-lignes
+
+Voici le détail d'une facture de mars 2026 pour la Villa Les Embruns (Mme Lefèvre), avec 6 séjours dans le mois et un check-in tardif.
+
+| Ligne | Détail | Montant HT |
+|---|---|---|
+| Commission conciergerie | 20 % HT sur 4 320,00 € de loyers encaissés | 864,00 € |
+| Forfait ménage | 6 séjours × 45,00 € | 270,00 € |
+| Forfait linge | 6 séjours × 18,00 € | 108,00 € |
+| Check-in | 1 arrivée après 22 h × 25,00 € | 25,00 € |
+| **Total HT** | | **1 267,00 €** |
+| TVA 20 % | | 253,40 € |
+| **Total TTC** | | **1 520,40 €** |
+
+Chaque ligne est reliée dans Firby aux réservations qui la composent — un clic sur la ligne ménage affiche les 6 séjours correspondants.
+
+## Configurer un forfait
+
+<Steps>
+  <Step title="Accédez aux règles de facturation">
+    Dans Firby, ouvrez **Paramètres → Règles de facturation → Forfaits**.
+  </Step>
+  <Step title="Ajoutez un forfait">
+    Cliquez sur **+ Ajouter un forfait**, sélectionnez le type (ménage, linge, check-in, etc.) et renseignez le montant.
+  </Step>
+  <Step title="Choisissez l'unité">
+    Sélectionnez **Par séjour**, **Par nuit** ou **Par mois** selon la nature de la prestation.
+  </Step>
+  <Step title="Configurez la TVA">
+    Précisez si le montant est HT ou TTC et indiquez le taux de TVA applicable à cette ligne.
+  </Step>
+  <Step title="Enregistrez">
+    Cliquez sur **Enregistrer**. Le forfait sera inclus dès la prochaine génération mensuelle.
+  </Step>
+</Steps>
+
+<Tip>
+  Utilisez les **lignes personnalisées** pour facturer des charges ponctuelles spécifiques à un logement — remplacement d'un équipement, prestation exceptionnelle, régularisation. Vous définissez le libellé et le montant librement, sans créer une règle récurrente. Si la charge ne concerne qu'un seul logement, appliquez-la directement en surcharge depuis la fiche du logement.
+</Tip>

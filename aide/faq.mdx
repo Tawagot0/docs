@@ -1,0 +1,73 @@
+---
+title: "Foire aux questions Firby : sécurité, règles, abonnement"
+sidebarTitle: "FAQ"
+description: "Réponses aux questions les plus courantes sur Firby : sécurité des accès PMS, contrôle des brouillons, règles particulières, facturation et engagement."
+---
+
+Voici les réponses aux questions les plus posées avant de se lancer avec Firby. Si vous ne trouvez pas ce que vous cherchez, écrivez-nous à [contact@firby.fr](mailto:contact@firby.fr) — le support est en français.
+
+## Sécurité et données
+
+<Accordion title="Mes identifiants PMS sont-ils en sécurité ?">
+  Oui. Dès que vous saisissez vos identifiants ou clés API PMS, Firby les chiffre en **AES-256-GCM** côté serveur. Ce chiffrement authentifié est l'un des standards les plus robustes disponibles. Une fois enregistrés, vos identifiants ne sont **jamais renvoyés au navigateur** ni affichés en clair dans l'interface : ils sont uniquement utilisés côté serveur pour synchroniser vos réservations.
+
+  Par précaution supplémentaire, créez dans votre PMS une clé API avec des droits limités à la **lecture des réservations** — la plupart des PMS supportés le permettent.
+</Accordion>
+
+<Accordion title="Firby transmet-il mes données à des tiers ?">
+  Firby utilise vos données **uniquement pour vous fournir le service**. Les seules transmissions que Firby effectue sont celles que vous initiez vous-même : lorsque vous poussez un brouillon vers Pennylane, Qonto, Abby ou Henrri, Firby envoie les données nécessaires à l'outil comptable que vous avez connecté. Aucune donnée n'est partagée à des fins commerciales ou publicitaires.
+</Accordion>
+
+## Contrôle et validation
+
+<Accordion title="Est-ce que je garde le contrôle avant l'envoi ?">
+  Absolument. Firby ne produit que des **brouillons** — rien ne part vers votre outil comptable sans une action explicite de votre part. Chaque mois, le 1er à 05:00, vos brouillons sont disponibles dans l'interface. Vous les relisez, corrigez si besoin, et c'est vous qui déclenchez le push vers Pennylane, Qonto, Abby ou Henrri.
+
+  Chaque ligne du brouillon affiche la règle appliquée et les réservations sources, ce qui vous permet de vérifier le calcul au centime près avant de valider.
+</Accordion>
+
+<Accordion title="Puis-je corriger un brouillon avant de le pousser ?">
+  Oui. Avant de pousser un brouillon vers votre outil comptable, vous pouvez l'éditer librement dans Firby : modifier un montant, ajouter ou supprimer une ligne, ajuster un libellé. La correction est totale. C'est l'étape de relecture prévue dans le workflow : Firby produit, vous validez.
+</Accordion>
+
+<Accordion title="Que se passe-t-il si mon PMS est indisponible le 1er du mois ?">
+  Firby tente de synchroniser vos réservations au moment de la génération des brouillons. Si l'API de votre PMS est temporairement indisponible, Firby relance la synchronisation automatiquement. Si les données restent incomplètes après les nouvelles tentatives, la génération des brouillons peut être retardée et vous en êtes notifié par e-mail.
+
+  Dans tous les cas, aucun brouillon n'est généré sur la base de données partielles sans que vous en soyez informé. Vous gardez la main sur la validation finale.
+</Accordion>
+
+## Règles de facturation
+
+<Accordion title="Mes règles sont particulières. Firby saura suivre ?">
+  Firby est conçu pour les cas complexes des conciergeries. Voici ce qu'il gère nativement :
+
+  - **5 bases de commission** : total brut, net, net hors ménage, hébergement seul, ou la commission déjà calculée par votre PMS
+  - **Forfaits au séjour, à la nuit ou au mois** : ménage, linge, consommables, check-in, maintenance, lignes personnalisées
+  - **Surcharges par logement** : chaque propriété peut surcharger les règles générales avec ses propres tarifs
+  - **Séjours propriétaire, annulations, no-shows** : ignorés, facturés à zéro ou avec frais conservés — vous définissez le comportement règle par règle
+  - **TVA** : franchise ou régime normal, taux par forfait, HT/TTC toujours explicite
+
+  Si votre tableur encode une règle particulière aujourd'hui, il est très probable que Firby puisse la reproduire. En cas de doute, contactez [contact@firby.fr](mailto:contact@firby.fr) — l'équipe peut vous aider à transposer votre configuration.
+</Accordion>
+
+<Accordion title="Puis-je avoir des règles différentes pour chaque propriétaire ?">
+  Oui. Vous pouvez définir des règles globales qui s'appliquent par défaut à tous vos propriétaires, puis ajouter des **surcharges par logement** pour les propriétés avec des conditions particulières. Une surcharge de logement prend le pas sur la règle générale pour le champ concerné, sans affecter le reste.
+</Accordion>
+
+## Facturation électronique et comptabilité
+
+<Accordion title="Et la facturation électronique (Factur-X, PDP) ?">
+  La conformité à la facturation électronique — notamment les formats Factur-X et le passage par les plateformes de dématérialisation partenaires (PDP) — est **portée par votre outil de facturation** (Pennylane, Qonto, Abby, Henrri), pas par Firby.
+
+  Firby prépare des **brouillons traçables** avec toutes les données nécessaires. C'est votre outil comptable qui assure la numérotation définitive, la conformité e-invoicing et l'archivage légal. Cette séparation des rôles garantit que chaque outil reste dans son périmètre de responsabilité.
+</Accordion>
+
+<Accordion title="Puis-je utiliser Firby sans outil comptable connecté ?">
+  Oui. Si vous ne souhaitez pas connecter d'outil comptable dans un premier temps, vous pouvez tout à fait consulter et vérifier vos brouillons directement dans Firby, puis les **exporter en PDF** pour les envoyer à vos propriétaires ou les intégrer manuellement dans votre outil habituel. La connexion à Pennylane, Qonto, Abby ou Henrri est une option qui élimine la ressaisie — elle n'est pas obligatoire pour bénéficier de la génération automatique des brouillons.
+</Accordion>
+
+## Abonnement
+
+<Accordion title="Y a-t-il un engagement ?">
+  Non. Firby fonctionne sur un **abonnement mensuel sans engagement de durée**. Vous pouvez résilier à tout moment depuis **Paramètres > Facturation > Résilier l'abonnement**. La résiliation prend effet à la fin de la période en cours, qui reste due — aucun prélèvement n'intervient ensuite. L'essai gratuit initial ne nécessite aucune carte bancaire.
+</Accordion>

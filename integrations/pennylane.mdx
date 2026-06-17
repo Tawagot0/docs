@@ -1,0 +1,43 @@
+---
+title: "Intégration Pennylane — Firby pousse vos brouillons"
+sidebarTitle: "Pennylane"
+description: "Connectez Firby à Pennylane via OAuth pour pousser vos brouillons de factures propriétaires et suivre les statuts de paiement en temps réel."
+---
+
+L'intégration Pennylane permet à Firby de pousser automatiquement vos brouillons de factures propriétaires dans votre espace Pennylane, avec toutes les lignes de facturation détaillées — commission, ménage, linge, check-in. Une fois les factures traitées côté Pennylane, le statut de paiement remonte dans Firby sans aucune saisie manuelle.
+
+## Ce que fait l'intégration
+
+Chaque brouillon composé par Firby (commission, forfaits, surcharges) est transmis à Pennylane sous forme de facture brouillon. Pennylane prend ensuite le relais : numérotation définitive, envoi au propriétaire, encaissement. Dès qu'un statut change dans Pennylane — **à payer**, **payée**, **en retard** ou **partiellement payée** — Firby se met à jour automatiquement.
+
+## Connecter Pennylane à Firby
+
+La connexion se configure une seule fois depuis les paramètres de Firby.
+
+<Steps>
+  <Step title="Ouvrir les intégrations">
+    Dans Firby, accédez à **Paramètres > Intégrations** puis sélectionnez **Pennylane**.
+  </Step>
+  <Step title="Autoriser la connexion OAuth">
+    Cliquez sur **Connecter**. Vous êtes redirigé vers Pennylane pour autoriser l'accès. Identifiez-vous si nécessaire, puis confirmez les permissions demandées.
+  </Step>
+  <Step title="Vérifier la connexion">
+    Une fois l'autorisation accordée, Firby affiche le nom de votre espace de travail Pennylane. La connexion est active — vous n'avez pas à la renouveler chaque mois.
+  </Step>
+</Steps>
+
+## Pousser un brouillon vers Pennylane
+
+Depuis l'écran de relecture des brouillons, sélectionnez la facture que vous souhaitez envoyer et cliquez sur **Pousser vers Pennylane**. Le brouillon apparaît instantanément dans Pennylane avec l'ensemble des lignes détaillées. Relisez, corrigez si nécessaire dans Pennylane, puis finalisez la facture depuis votre espace Pennylane.
+
+<Note>
+  Firby transmet uniquement des **brouillons**. La numérotation définitive des factures, leur envoi aux propriétaires et la conformité à la facturation électronique (Factur-X, plateformes PDP) restent entièrement gérés par Pennylane.
+</Note>
+
+## Suivi du statut de paiement
+
+Vous n'avez rien à faire pour suivre les paiements : dès qu'une facture est marquée **payée**, **en retard** ou **partiellement payée** dans Pennylane, le statut se met à jour automatiquement dans Firby. Vous disposez ainsi d'une vue consolidée du recouvrement sur l'ensemble de vos propriétaires, directement dans Firby.
+
+<Tip>
+  Si un push échoue, vérifiez que la connexion Pennylane est toujours active dans **Paramètres > Intégrations**. Une autorisation OAuth peut expirer ou être révoquée depuis Pennylane — il suffit alors de cliquer à nouveau sur **Connecter** pour la renouveler.
+</Tip>

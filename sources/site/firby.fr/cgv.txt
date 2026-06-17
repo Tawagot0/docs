@@ -1,0 +1,49 @@
+# Source: https://firby.fr/cgv
+
+[Retour à l’accueil](https://firby.fr/)
+
+## 01Objet
+
+Les présentes conditions générales de vente (CGV) régissent la souscription et l’utilisation du service Firby, édité par **HEXI SAAS**, SASU au capital de 100 €, immatriculée au RCS de Créteil sous le numéro 100 580 562, dont le siège social est situé 36 rue Michelet, 94460 Valenton. Toute souscription d’un abonnement emporte acceptation pleine et entière des présentes CGV.
+
+## 02Description du service
+
+Firby est un service de facturation automatique destiné aux conciergeries de location courte durée. Il importe les réservations depuis les outils de gestion (PMS) connectés — tels que Superhote, Guesty ou Lodgify —, applique les règles de facturation paramétrées par le client (bases de commission, forfaits, surcharges) et compose chaque mois les factures des propriétaires, prêtes à être exportées vers les outils de comptabilité et de paiement compatibles (tels que Pennylane ou Qonto).
+
+Le périmètre exact de chaque plan (volumes, logements, intégrations et limites associées) est celui décrit sur la page Tarifs au moment de la souscription.
+
+## 03Compte et souscription
+
+La souscription suppose la création d’un compte. Le client garantit l’exactitude des informations fournies et s’engage à préserver la confidentialité de ses identifiants. Le client est responsable des actions réalisées depuis son compte. Le service est réservé aux professionnels agissant dans le cadre de leur activité.
+
+## 04Prix et paiement
+
+Les prix sont indiqués en euros et précisés sur la page Tarifs au moment de la souscription. Les abonnements sont facturés d’avance, par prélèvement automatique via un prestataire de paiement sécurisé. La TVA applicable est précisée lors du paiement. En cas d’incident de paiement, HEXI SAAS peut suspendre l’accès au service après relance restée sans effet.
+
+HEXI SAAS se réserve le droit de modifier ses tarifs ; toute modification est notifiée au moins 30 jours à l’avance et ne s’applique qu’aux périodes de facturation suivantes.
+
+## 05Durée, changement de plan et résiliation
+
+Les abonnements sont souscrits sans engagement de durée, sauf stipulation contraire indiquée sur la page Tarifs. Le client peut changer de plan ou résilier à tout moment depuis son espace de facturation. La résiliation prend effet à la fin de la période en cours, qui reste due ; aucun prélèvement n’intervient ensuite.
+
+## 06Disponibilité et limites du service
+
+HEXI SAAS s’efforce d’assurer une disponibilité maximale du service, sans pouvoir garantir une continuité absolue (maintenances, incidents, dépendances techniques externes, notamment la disponibilité des API des outils tiers connectés). Firby restitue les factures à partir des données fournies par les outils connectés et des règles paramétrées par le client : il appartient à ce dernier de vérifier ses règles de facturation et de contrôler les factures produites avant leur envoi ou leur comptabilisation.
+
+## 07Données du client
+
+Les données importées, les règles de facturation et les factures générées dans le compte appartiennent au client. HEXI SAAS les traite uniquement pour fournir le service. Le traitement des données à caractère personnel est détaillé dans les [mentions légales](https://firby.fr/mentions-legales#donnees-personnelles). En cas de clôture du compte, les données sont supprimées dans un délai de 30 jours, sous réserve des obligations légales de conservation.
+
+## 08Responsabilité
+
+La responsabilité de HEXI SAAS, toutes causes confondues, est limitée au montant des sommes effectivement payées par le client au cours des 12 mois précédant le fait générateur. HEXI SAAS ne saurait être tenue responsable des conséquences d’une erreur de paramétrage des règles de facturation, d’une donnée erronée transmise par un outil tiers, ni des décisions prises par le client sur la base des factures produites.
+
+## 09Modification des CGV
+
+HEXI SAAS peut faire évoluer les présentes CGV. Les clients sont informés par e-mail au moins 30 jours avant l’entrée en vigueur des nouvelles conditions. La poursuite de l’utilisation du service après cette date vaut acceptation.
+
+## 10Droit applicable et litiges
+
+Les présentes CGV sont soumises au droit français. En cas de litige, une solution amiable sera recherchée en priorité : écrivez à [contact@firby.fr](mailto:contact@firby.fr). À défaut d’accord, les tribunaux du ressort du siège de HEXI SAAS sont seuls compétents.
+
+Une question d’ordre légal ou relative à vos données ? Écrivez-nous à [contact@firby.fr](mailto:contact@firby.fr).

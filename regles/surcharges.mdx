@@ -1,0 +1,77 @@
+---
+title: "Surcharges par logement : tarifs spécifiques Firby"
+sidebarTitle: "Surcharges"
+description: "Définissez des tarifs spécifiques logement par logement : surchargez n'importe quelle règle globale, le reste est hérité automatiquement."
+---
+
+Vos règles globales s'appliquent à tous vos logements par défaut, mais chaque bien a ses particularités. Le studio du Vieux-Port n'est pas la villa en bord de mer : la surface diffère, l'équipement aussi, et les tarifs des prestations peuvent varier en conséquence. Les surcharges vous permettent de remplacer n'importe quelle règle globale pour un logement précis, sans toucher aux paramètres des autres propriétés.
+
+## Principe d'héritage
+
+Firby applique les règles selon un ordre de priorité simple :
+
+1. **Surcharge logement** — si une règle est définie au niveau du logement, c'est elle qui s'applique.
+2. **Règle globale** — si aucune surcharge n'existe pour ce logement, la règle globale prend le relais.
+
+Vous n'avez pas à renseigner toutes les lignes pour chaque logement. Seules les valeurs que vous souhaitez différencier nécessitent une surcharge ; le reste hérite automatiquement du global.
+
+<Note>
+  Une surcharge est permanente : une fois définie, elle s'applique chaque mois sans ressaisie, tout comme les règles globales.
+</Note>
+
+## Ce qui peut être surchargé
+
+<CardGroup cols={2}>
+  <Card title="Taux de commission" icon="percent">
+    Appliquez un taux de commission différent pour un logement dont votre accord propriétaire est spécifique (ex. : 15 % pour un propriétaire partenaire historique).
+  </Card>
+  <Card title="Forfait ménage" icon="broom">
+    Fixez un tarif de ménage propre au logement — une plus grande superficie justifie souvent un forfait plus élevé.
+  </Card>
+  <Card title="Forfait linge" icon="shirt">
+    Adaptez le tarif linge si le logement dispose d'une literie king-size ou d'un équipement particulier nécessitant une prestation spécifique.
+  </Card>
+  <Card title="Lignes personnalisées" icon="list">
+    Ajoutez des lignes spécifiques à ce logement uniquement — une prestation récurrente qui ne concerne qu'un seul propriétaire.
+  </Card>
+</CardGroup>
+
+## Exemple : deux logements, deux tarifs de ménage
+
+Imaginons deux logements dans votre portefeuille, avec une règle globale de ménage à **45,00 €** par séjour.
+
+| Logement | Règle globale | Surcharge | Tarif appliqué |
+|---|---|---|---|
+| Le Sextant — T2 Vieux-Port | 45,00 € / séjour | *(aucune)* | **45,00 €** |
+| Villa Les Embruns | 45,00 € / séjour | 60,00 € / séjour | **60,00 €** |
+
+La Villa Les Embruns est plus grande et nécessite deux heures de ménage supplémentaires : vous avez défini une surcharge à 60,00 € directement sur ce logement. Le T2 Vieux-Port, lui, ne dispose d'aucune surcharge et hérite du tarif global de 45,00 €.
+
+Sur les factures respectives, pour un mois à 6 séjours chacun :
+
+- **Le Sextant** : 6 × 45,00 € = **270,00 € HT**
+- **Villa Les Embruns** : 6 × 60,00 € = **360,00 € HT**
+
+## Ajouter une surcharge à un logement
+
+<Steps>
+  <Step title="Ouvrez la fiche du logement">
+    Dans Firby, accédez à **Logements** et sélectionnez le logement concerné.
+  </Step>
+  <Step title="Ouvrez ses paramètres de facturation">
+    Cliquez sur l'onglet **Facturation** dans la fiche du logement.
+  </Step>
+  <Step title="Activez la surcharge souhaitée">
+    Chaque ligne de facturation affiche son mode actuel (*Hérité du global*). Cliquez sur **Surcharger** en regard de la ligne à personnaliser.
+  </Step>
+  <Step title="Saisissez la valeur spécifique">
+    Entrez le montant ou le taux propre à ce logement. Les autres lignes restent héritées du global.
+  </Step>
+  <Step title="Enregistrez">
+    Cliquez sur **Enregistrer les surcharges**. La modification prend effet dès la prochaine génération mensuelle.
+  </Step>
+</Steps>
+
+<Warning>
+  Supprimer une surcharge remet immédiatement la ligne en héritage du global. Si votre règle globale a changé entre-temps, vérifiez que la valeur héritée est bien celle que vous souhaitez appliquer à ce logement.
+</Warning>

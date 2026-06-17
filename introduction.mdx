@@ -1,0 +1,97 @@
+---
+title: "Firby : facturation automatique pour conciergeries"
+sidebarTitle: "Introduction"
+description: "Découvrez comment Firby génère vos brouillons de factures propriétaires chaque mois, sans ressaisie ni tableur, et les pousse vers votre compta."
+---
+
+Firby est un outil de facturation automatique conçu pour les conciergeries de location courte durée. Chaque mois, le 1er à 05:00, il lit vos réservations dans votre PMS, applique vos règles — commissions, ménage, linge, check-in — et compose une facture brouillon par propriétaire, prête à relire puis à pousser vers votre outil comptable. Vous ne ressaisissez plus rien : vous relisez, vous validez, et la clôture est faite.
+
+## Comment ça fonctionne
+
+Firby s'installe une fois et tourne ensuite de façon autonome, mois après mois.
+
+<Steps>
+  <Step title="Lecture des réservations">
+    Firby se connecte à votre PMS et importe en continu vos logements et vos réservations. Tous les canaux remontés par votre PMS sont pris en charge : Airbnb, Booking.com, Vrbo, Expedia et réservations directes.
+  </Step>
+  <Step title="Application de vos règles">
+    Commissions sur cinq bases de calcul, forfaits ménage, linge, check-in, surcharges par logement : Firby applique les règles que vous avez posées une fois, identiquement chaque mois, en centimes entiers.
+  </Step>
+  <Step title="Génération des brouillons">
+    Le 1er du mois à 05:00, Firby synchronise une dernière fois les réservations et compose une facture brouillon par propriétaire. Chaque ligne est reliée à la règle et aux réservations qui la justifient.
+  </Step>
+  <Step title="Relecture et push compta">
+    Vous relisez les brouillons, corrigez si besoin, puis poussez vers votre outil de facturation (Pennylane, Qonto, Abby ou Henrri). Le statut de paiement remonte ensuite dans Firby.
+  </Step>
+</Steps>
+
+## Ce qui différencie Firby
+
+### Une approche brouillon, pas d'envoi automatique
+
+Firby ne pousse jamais une facture sans votre accord. Il produit des brouillons que vous relisez et validez vous-même avant tout envoi. Vous conservez le contrôle total sur ce qui part vers vos propriétaires et votre comptabilité.
+
+### Traçabilité complète
+
+Chaque montant est justifiable : sélectionnez une ligne sur n'importe quelle facture et Firby affiche la règle appliquée, les réservations source et le calcul exact — même des mois plus tard. Aucun agrégat opaque, aucun chiffre « tombé de nulle part ».
+
+### Six PMS, quatre outils comptables
+
+Firby s'intègre avec les principaux PMS utilisés par les conciergeries françaises et européennes, ainsi qu'avec les outils de facturation les plus courants en France.
+
+**PMS pris en charge :**
+
+<CardGroup cols={3}>
+  <Card title="Superhote" icon="house-laptop" />
+  <Card title="Guesty" icon="house-laptop" />
+  <Card title="Lodgify" icon="house-laptop" />
+  <Card title="Smoobu" icon="house-laptop" />
+  <Card title="Smily" icon="house-laptop" />
+  <Card title="Hostaway" icon="house-laptop" />
+</CardGroup>
+
+**Outils comptables pris en charge :**
+
+<CardGroup cols={4}>
+  <Card title="Pennylane" icon="file-invoice" />
+  <Card title="Qonto" icon="file-invoice" />
+  <Card title="Abby" icon="file-invoice" />
+  <Card title="Henrri" icon="file-invoice" />
+</CardGroup>
+
+<Note>
+  La numérotation définitive et la conformité à la facturation électronique (Factur-X, plateformes PDP) restent assurées par votre outil de facturation. Firby prépare des brouillons traçables ; votre outil comptable garde le dernier mot.
+</Note>
+
+## Fonctionnalités clés
+
+<CardGroup cols={2}>
+  <Card
+    title="Règles de facturation"
+    icon="sliders"
+    href="/regles/commissions"
+  >
+    Commissions sur cinq bases, forfaits au séjour ou à la nuit, surcharges par logement, gestion des séjours propriétaires et annulations.
+  </Card>
+  <Card
+    title="Brouillons & validation"
+    icon="file-pen"
+    href="/brouillons/generation"
+  >
+    Un brouillon par propriétaire le 1er du mois à 05:00, avec chaque ligne reliée à ses réservations et à sa règle.
+  </Card>
+  <Card
+    title="Intégrations compta"
+    icon="arrow-right-arrow-left"
+    href="/integrations/pennylane"
+  >
+    Push en brouillon vers Pennylane, Qonto, Abby ou Henrri. Le statut de paiement remonte ensuite automatiquement.
+  </Card>
+  <Card
+    title="Portail propriétaires"
+    icon="users"
+    href="/portail/invitation"
+  >
+    Invitez vos propriétaires par e-mail : ils consultent leurs factures et leur statut de paiement en ligne, sans que vous ayez à les renvoyer un par un.
+  </Card>
+</CardGroup>

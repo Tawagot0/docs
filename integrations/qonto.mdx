@@ -1,0 +1,43 @@
+---
+title: "Intégration Firby × Qonto — poussez vos brouillons"
+sidebarTitle: "Qonto"
+description: "Reliez Firby à Qonto via clé API pour pousser vos brouillons de factures propriétaires dans le module facturation et synchroniser les statuts."
+---
+
+L'intégration Qonto vous permet d'envoyer les brouillons de factures composés par Firby directement dans le module facturation de Qonto. Toutes les lignes détaillées — commission, ménage, linge, check-in, surcharges — sont transmises sans ressaisie. Le statut de paiement remonte ensuite de Qonto vers Firby, pour un suivi centralisé de l'ensemble de vos propriétaires.
+
+## Ce que fait l'intégration
+
+Firby pousse chaque brouillon de facture vers le module de facturation de votre compte Qonto. Qonto gère ensuite la numérotation définitive, l'envoi au propriétaire et l'encaissement. Firby interroge périodiquement Qonto pour récupérer les mises à jour de statut — **à payer**, **payée**, **en retard** ou **partiellement payée** — et les afficher dans votre tableau de bord Firby.
+
+## Connecter Qonto à Firby
+
+La connexion se configure une seule fois depuis les paramètres de Firby.
+
+<Steps>
+  <Step title="Ouvrir les intégrations">
+    Dans Firby, accédez à **Paramètres > Intégrations** puis sélectionnez **Qonto**.
+  </Step>
+  <Step title="Renseigner votre clé API Qonto">
+    Saisissez votre clé API Qonto dans le champ prévu. Vous trouverez cette clé dans votre espace Qonto, sous **Paramètres > API**. Copiez-la et collez-la dans Firby.
+  </Step>
+  <Step title="Valider la connexion">
+    Firby vérifie la clé et confirme la connexion à votre compte Qonto. Le nom de votre organisation Qonto s'affiche — la configuration est terminée.
+  </Step>
+</Steps>
+
+<Warning>
+  Le module de facturation de Qonto n'est pas inclus dans tous les abonnements. Vérifiez que votre offre Qonto inclut bien la fonctionnalité **facturation** avant de configurer l'intégration — sans elle, le push de brouillons ne pourra pas aboutir.
+</Warning>
+
+## Pousser un brouillon vers Qonto
+
+Depuis l'écran de relecture des brouillons, sélectionnez la facture souhaitée et cliquez sur **Pousser vers Qonto**. Le brouillon apparaît dans le module facturation de Qonto avec l'ensemble des lignes détaillées. Finalisez et envoyez la facture directement depuis Qonto.
+
+<Note>
+  Firby ne crée que des **brouillons**. La numérotation définitive, l'envoi aux propriétaires et la conformité réglementaire (Factur-X, plateformes PDP) sont pris en charge par Qonto, pas par Firby.
+</Note>
+
+## Suivi du statut de paiement
+
+Firby interroge régulièrement Qonto pour récupérer les statuts à jour. Vous n'avez aucune action à effectuer : dès qu'une facture évolue dans Qonto, le statut correspondant se met à jour dans Firby. Vous pouvez ainsi suivre l'état de recouvrement de tous vos propriétaires depuis un seul endroit.
